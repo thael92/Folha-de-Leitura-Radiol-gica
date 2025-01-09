@@ -169,11 +169,6 @@ body {
     text-align: center;
     top: -24px;
 }
-.name-forma-tamanho {
-    position: relative;
-    left: -275px;
-    top: -36px;
-}
 
 .label-pequenas-opacidades-b2 label {
     font-size: 16px;
@@ -182,15 +177,15 @@ body {
     cursor: pointer;
     display: flex;
     width: 63px;
-    height: 21px;
+    height: 22px;
     border: 1px solid #008000;
     align-items: center;
-    gap: 14px;
+    gap: 3px;
     padding: 5px;
     position: relative;
     left: -1px;
-    top: -21px;
-    margin: -1px 0px -1px 0px;
+    top: -27px;
+    margin: -1px 0px 0px 0px;
 }
 .label-pequenas-opacidades-b2-01 label {
     font-size: 16px;
@@ -199,30 +194,38 @@ body {
     cursor: pointer;
     display: flex;
     width: 56px;
-    height: 21px;
+    height: 22px;
     border: 1px solid #008000;
     align-items: center;
     gap: 14px;
     padding: 5px;
     position: relative;
     left: 74px;
-    top: -119px;
+    top: -95px;
     margin: -1px 0px -1px 0px;
 }
 .Primaria {
     border: 1px solid #008000;
     position: relative;
     width: 141px;
-    height: 126px;
-    left: 54px;
-    top: -41px;
+    height: 123px;
+    left: 44px;
+    top: -46px;
     /* z-index: 5; */
 }
-.Primaria p {
+.Primaria p{
     position: relative;
     top: -14px;
-    left: 40px;
-    display: flex;
+}
+.secundaria{
+    border: 1px solid #008000;
+    position: relative;
+    width: 141px;
+    height: 123px;
+    left: 45px;
+    top: 20px;
+    /* z-index: 5; */
+
 }
 
 
@@ -395,7 +398,6 @@ label {
 }
 
 .label-rxgidital input[type="radio"] {
-    appearance: none; /* Remove o estilo padrão */
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
@@ -460,7 +462,6 @@ label {
 }
 
 .label-negatoscopio input[type="radio"] {
-    appearance: none; /* Remove o estilo padrão */
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
@@ -495,7 +496,6 @@ label {
     margin: 0px -3px 0px -2px;
 }
 .label-qualidade-tecnica input[type="radio"]{
-    appearance: none; /* Remove o estilo padrão */
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
@@ -531,7 +531,6 @@ label {
 }
 
 .labe-radiografia-normal input[type="radio"]{
-    appearance: none; /* Remove o estilo padrão */
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
@@ -565,7 +564,6 @@ label {
     margin: 0px -3px 0px -2px;
 }
 .label-anormalidade-a2 input[type="radio"]{
-    appearance: none; /* Remove o estilo padrão */
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
