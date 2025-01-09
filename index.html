@@ -1,0 +1,110 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Leitura Radiológica - OIT 2011</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="form-group-logo"><img src="./img/logo.jpg" alt="" width="200px"></div>
+            <div class="form-group-logo-text">
+                <h1>FOLHA DE LEITURA RADIOLÓGICA - CLASSIFICAÇÃO INTERNACIONAL
+                    DE RADIOGRAFIAS DE PNEUMOCONIOSE - OIT 2011</h1>
+            </div>
+            <form id="radiological-form">
+                <div class="form-container-name">
+                    <div class="form-group-name">
+                        <label for="nome">Nome</label>
+                        <input class="input-name" type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group-date">
+                        <label class="text-datarx" for="data-rx">Data do RX</label>
+                        <input class="input-date" type="date" id="data-rx" name="data-rx" required>
+                    </div>
+
+                    <div class="form-group-nrx">
+                        <label for="numero-rx">Nº do RX</label>
+                        <input class="input-numero-rx" type="text" id="numero-rx" name="numero-rx" required>
+                    </div>
+                    <div class="form-group-leitor">
+                        <label for="leitor">Leitor (Iniciais)</label>
+                        <input class="input-Leitor" type="text" id="leitor" name="leitor" required>
+                    </div>
+
+                    <div class="form-group-rxdigital">
+                        <label>RX Digital</label>
+                        <div class="label-rxgidital">
+                            <label><input type="radio" name="rx-digital" value="sim" required> Sim</label>
+                            <label><input type="radio" name="rx-digital" value="nao"> Não</label>
+                        </div>
+                    </div>
+                    <div class="form-group-leitura-negatoscópio">
+
+                        <label class="leitura-negat">Leitura em Negatoscópio</label>
+
+                        <div class="label-negatoscopio">
+                            <label><input type="radio" name="negatoscopio" value="sim" required> Sim</label>
+                            <label><input type="radio" name="negatoscopio" value="nao"> Não</label>
+                        </div>
+                    </div>
+
+                </div> 
+
+
+                    <div class="form-group-qualidade-tecnica">
+                        <div class="a1">1A</div>
+                        <label class="name-label-qualidade" >QUALIDADE TÉCNICA:</label>
+                        <div class="label-qualidade-tecnica">
+                            <label><input type="radio" name="qualidade" value="1" required> 1</label>
+                            <label><input type="radio" name="qualidade" value="2"> 2</label>
+                            <label><input type="radio" name="qualidade" value="3"> 3</label>
+                            <label><input type="radio" name="qualidade" value="4"> 4</label>
+                        </div>
+                        <label class="name-label-comentario">Comentário:</label>
+                        <input class="input-comentario" type="text" id="comentario" name="Comentário" required>
+                    </div>
+
+                    <div class="form-group-radiografia-normal">
+                        <div class="b1">1B</div>
+                        <label class="name-label-radiografia-normal" >RADIOGRAFIA NORMAL:</label>
+                        <div class="labe-radiografia-normal">
+                            <label><input type="radio" name="qualidade" value="1" required> SIM (finalizar a leitura)</label>
+                            <label><input type="radio" name="qualidade" value="2"> NÃO (passe p/ a seção 2)</label>
+                           
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group-2a">
+                        <div class="a2">2A</div>
+                        <label class="label-name-anormalidade-a2">ALGUMA ANORMALIDADE DE PARÊNQUIMA <br>
+                            CONSISTENTE COM PNEUMOCONIOSE:</label>
+                        <div class="label-anormalidade-a2">
+                            <label><input type="radio" name="anormalidade-parenquima" value="sim" required> SIM (complete 2B e 2C)</label>
+                            <label><input type="radio" name="anormalidade-parenquima" value="nao"> NÃO (passe para a seção 3)</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentários</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit">Enviar</button>
+                    </div>
+                 
+            </form>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
