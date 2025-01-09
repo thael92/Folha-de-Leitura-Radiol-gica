@@ -143,6 +143,88 @@ body {
     top: -47px;
 }
 
+.form-group-2b {
+    border: 1px solid #008000;
+    margin-bottom: 20px;
+    display: flexs;
+    flex-direction: column;
+    position: relative;
+    width: 798px;
+    height: 223px;
+    top: -235px;
+    /* left: 0px; */
+}
+.form-group-2b .b2{
+    border: 2px solid #008000;
+    width: 22px;
+    height: 23px;
+    text-align: center;
+    display: flex;
+    margin: -1px -1px;
+    padding: 5px;
+}
+.label-name-pequenas-opacidades-b2 {
+    position: relative;
+    left: -247px;
+    text-align: center;
+    top: -24px;
+}
+.name-forma-tamanho {
+    position: relative;
+    left: -275px;
+    top: -36px;
+}
+
+.label-pequenas-opacidades-b2 label {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #008000;
+    cursor: pointer;
+    display: flex;
+    width: 63px;
+    height: 21px;
+    border: 1px solid #008000;
+    align-items: center;
+    gap: 14px;
+    padding: 5px;
+    position: relative;
+    left: -1px;
+    top: -21px;
+    margin: -1px 0px -1px 0px;
+}
+.label-pequenas-opacidades-b2-01 label {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #008000;
+    cursor: pointer;
+    display: flex;
+    width: 56px;
+    height: 21px;
+    border: 1px solid #008000;
+    align-items: center;
+    gap: 14px;
+    padding: 5px;
+    position: relative;
+    left: 74px;
+    top: -119px;
+    margin: -1px 0px -1px 0px;
+}
+.Primaria {
+    border: 1px solid #008000;
+    position: relative;
+    width: 141px;
+    height: 126px;
+    left: 54px;
+    top: -41px;
+    /* z-index: 5; */
+}
+.Primaria p {
+    position: relative;
+    top: -14px;
+    left: 40px;
+    display: flex;
+}
+
 
 .form-group-name {
     border: 1px solid #008000;
