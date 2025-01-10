@@ -217,14 +217,13 @@ body {
     padding: 5px;
 }
 
-.form-group-3b {
-    border: 1px solid #008000;
-    margin-bottom: 20px;
-    display: flexs;
-    flex-direction: column;
+.form-group-3b {    
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
     position: relative;
     width: 1084px;
-    height: 282px;
+    height: 236px;
     top: -692px;
     left: -1px;
 }
@@ -239,16 +238,14 @@ body {
     padding: 5px;
 }
 
-.form-group-3c  {
+.form-group-3c {
     border: 1px solid #008000;
     margin-bottom: 20px;
-    display: flexs;
-    flex-direction: column;
     position: relative;
-    width: 1084px;
-    height: 54px;
-    top: -671px;
-    left: -1px;
+    width: 1085px;
+    height: 50px;
+    top: -996px;
+    left: -2px;
 }
 .form-group-3c .c3 {
     border: 2px solid #008000;
@@ -257,6 +254,25 @@ body {
     text-align: center;
     display: flex;
     margin: -1px -1px;
+    padding: 5px;
+}
+.form-group-3d{
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
+    position: relative;
+    width: 1084px;
+    height: 236px;
+    top: -692px;
+    left: -1px;
+}
+.form-group-3d .d3{
+    border: 2px solid #008000;
+    width: 22px;
+    height: 23px;
+    text-align: center;
+    display: flex;
+    margin: -2px -1px;
     padding: 5px;
 
 }
@@ -800,6 +816,7 @@ body {
     margin: 0px -6px 0px 0px;
 }
 
+
 .label-extensao-parede-b3-01 .label-e-b3 {
     position: relative;
     left: -77px;
@@ -861,6 +878,122 @@ body {
     top: -793px;
     left: 167px;
     width: 119px;
+}
+
+.label-name-costofrenico-c3{
+    position: relative;
+    left: 64px;
+    top: -37px;
+    width: 382px;
+    text-align: -webkit-left;
+
+}
+.label-costofrenico-c3 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 15px;
+    top: -76px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-name-pleural-difuso-d3{
+    position: relative;
+    left: 64px;
+    top: -37px;
+    width: 382px;
+    text-align: -webkit-left;
+}
+.label-pleural-difuso-d3 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 24px;
+    position: relative;
+    left: -94px;
+    top: -96px;
+    margin: 0px -3px 0px -2px;
+}
+.label-pleural-difuso-d3 input{
+    width: 20px;
+    height: 20px;
+}
+.label-pleural-difuso-d3-Parede-perfi label{
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -55px;
+    margin: -1px -5px 0px -1px;
+}
+.label-pleural-difuso-d3-Parede-perfi p {
+    position: relative;
+    left: 500px;
+    top: -5px;
+    width: 77px;
+    z-index: 20;
+    text-align: -webkit-left;
+}
+.label-pleural-difuso-d3-Frontal-01 label{
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -97px;
+    margin: -1px -5px 0px -1px;
+}
+.label-pleural-difuso-d3-Frontal-01 p{
+    position: relative;
+    left: 500px;
+    top: -57px;
+    width: 77px;
+    z-index: 20;
+    text-align: -webkit-left;
+}
+.label-calcificacao-d3-01 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: -4px;
+    top: -21px;
+    margin: -1px -5px 0px -1px;
+}
+.label-calcificacao-d3-02 label{
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: -4px;
+    top: -13px;
+    margin: -1px -5px 0px -1px;
+
 }
 
 
@@ -929,6 +1062,30 @@ body {
     top: -761px;
     width: 263px;
     text-align: -webkit-left;
+}
+.div-local-d3{
+    position: relative;
+    left: -461px;
+    top: -125px;
+}
+.div-local-d3 .text-local-d3{
+    position: relative;
+    left: 590px;
+    top: 3px;
+    width: 60px;
+
+}
+.div-calcificacao-d3{
+    position: relative;
+    left: 806px;
+    top: -199px;
+    width: 218px;
+}
+.div-calcificacao-d3 .text-calcificacao-03{
+    position: relative;
+    left: 13px;
+    top: -10px;
+    width: 60px;
 }
 
 .form-group-name {
