@@ -6,7 +6,7 @@ body {
 }
 
 .form-container {
-    max-width: 1100px;
+    width: 1100px;
     height: 2199px;
     margin: 20px auto;
     padding: 20px;
@@ -46,6 +46,7 @@ body {
 .form-header p {
     font-size: 16px;
 }
+
 .form-group-qualidade-tecnica {
     border: 2px solid #008000;
     margin-bottom: 20px;
@@ -56,6 +57,7 @@ body {
     height: 100px;
     top: -82px;
 }
+
 .form-group-qualidade-tecnica .a1 {
     border: 2px solid #008000;
     width: 22px;
@@ -84,6 +86,7 @@ body {
     top: -204px;
     left: 545px;
 }
+
 .form-group-radiografia-normal .b1 {
     border: 2px solid #008000;
     width: 22px;
@@ -112,7 +115,7 @@ body {
     /* left: 0px; */
 }
 
-.form-group-2a .a2{
+.form-group-2a .a2 {
     border: 2px solid #008000;
     width: 22px;
     height: 23px;
@@ -121,6 +124,7 @@ body {
     margin: -1px -1px;
     padding: 5px;
 }
+
 .label-name-anormalidade-a2 {
     position: relative;
     left: -317px;
@@ -140,6 +144,7 @@ body {
     top: -52px;
     left: 35px;
 }
+
 .name-label-comentario {
     position: relative;
     left: -188px;
@@ -157,7 +162,8 @@ body {
     top: -235px;
     /* left: 0px; */
 }
-.form-group-2b .b2{
+
+.form-group-2b .b2 {
     border: 2px solid #008000;
     width: 22px;
     height: 23px;
@@ -166,6 +172,7 @@ body {
     margin: -1px -1px;
     padding: 5px;
 }
+
 .form-group-2c {
     border: 1px solid #008000;
     margin-bottom: 20px;
@@ -177,6 +184,7 @@ body {
     top: -662px;
     left: 798px;
 }
+
 .form-group-2c .c2 {
     border: 2px solid #008000;
     width: 22px;
@@ -186,6 +194,7 @@ body {
     margin: -1px -1px;
     padding: 5px;
 }
+
 .form-group-3a {
     border: 1px solid #008000;
     margin-bottom: 20px;
@@ -193,11 +202,12 @@ body {
     flex-direction: column;
     position: relative;
     width: 1084px;
-    height: 82px;
+    height: 54px;
     top: -671px;
     left: -1px;
 }
-.form-group-3a .a3{
+
+.form-group-3a .a3 {
     border: 2px solid #008000;
     width: 22px;
     height: 23px;
@@ -207,7 +217,7 @@ body {
     padding: 5px;
 }
 
-.form-group-3b{
+.form-group-3b {
     border: 1px solid #008000;
     margin-bottom: 20px;
     display: flexs;
@@ -215,9 +225,10 @@ body {
     position: relative;
     width: 1084px;
     height: 282px;
-    top: -671px;
+    top: -692px;
     left: -1px;
 }
+
 .form-group-3b .b3 {
     border: 2px solid #008000;
     width: 22px;
@@ -227,6 +238,29 @@ body {
     margin: -2px -1px;
     padding: 5px;
 }
+
+.form-group-3c  {
+    border: 1px solid #008000;
+    margin-bottom: 20px;
+    display: flexs;
+    flex-direction: column;
+    position: relative;
+    width: 1084px;
+    height: 54px;
+    top: -671px;
+    left: -1px;
+}
+.form-group-3c .c3 {
+    border: 2px solid #008000;
+    width: 22px;
+    height: 23px;
+    text-align: center;
+    display: flex;
+    margin: -1px -1px;
+    padding: 5px;
+
+}
+
 .label-name-pequenas-opacidades-b2 {
     position: relative;
     left: -247px;
@@ -251,6 +285,7 @@ body {
     top: -27px;
     margin: -1px 0px 0px 0px;
 }
+
 .label-pequenas-opacidades-b2-01 label {
     font-size: 16px;
     /* font-weight: bold; */
@@ -268,6 +303,7 @@ body {
     top: -128px;
     margin: -1px 0px 0px 0px;
 }
+
 .Primaria {
     border: 1px solid #008000;
     position: relative;
@@ -277,17 +313,20 @@ body {
     top: -46px;
     /* z-index: 5; */
 }
-.Primaria p{
+
+.Primaria p {
     position: relative;
     top: -14px;
 }
-.name-forma-tamanho{
+
+.name-forma-tamanho {
     position: relative;
     top: -35px;
     left: -281px;
 
 }
-.label-pequenas-opacidades-b2-secundaria label{
+
+.label-pequenas-opacidades-b2-secundaria label {
     font-size: 16px;
     /* font-weight: bold; */
     color: #008000;
@@ -305,6 +344,7 @@ body {
     margin: -1px 0px 0px 0px;
 
 }
+
 .label-pequenas-opacidades-b2-secundaria-01 label {
     font-size: 16px;
     /* font-weight: bold; */
@@ -322,6 +362,7 @@ body {
     top: -126px;
     margin: -1px 0px 0px 0px;
 }
+
 .secundaria {
     border: 1px solid #008000;
     position: relative;
@@ -331,12 +372,13 @@ body {
     top: -172px;
     /* z-index: 5; */
 }
-.secundaria p{
+
+.secundaria p {
     position: relative;
     top: -13px;
 }
 
-.label-pequenas-opacidades-b-Zonas label{
+.label-pequenas-opacidades-b-Zonas label {
     font-size: 16px;
     /* font-weight: bold; */
     color: #008000;
@@ -353,10 +395,12 @@ body {
     top: -25px;
     margin: -1px 0px 0px 0px;
 }
-.name-D{
+
+.name-D {
     margin: 28px 0px 0px 63px;
 }
-.label-pequenas-opacidades-b-Zonas-01 label{
+
+.label-pequenas-opacidades-b-Zonas-01 label {
     font-size: 16px;
     /* font-weight: bold; */
     color: #008000;
@@ -373,11 +417,13 @@ body {
     top: -151px;
     margin: -1px 0px 0px 0px;
 }
-.name-E{
+
+.name-E {
     margin: 28px 0px 0px 63px;
 }
+
 .b-zonas {
-    
+
     position: relative;
     width: 141px;
     height: 135px;
@@ -385,11 +431,13 @@ body {
     top: -325px;
     /* z-index: 5; */
 }
-.b-zonas p{
+
+.b-zonas p {
     position: relative;
     top: -13px;
     left: -38px;
 }
+
 .b-zonas input {
     background-color: initial;
     cursor: default;
@@ -410,11 +458,13 @@ body {
     top: -475px;
     /* z-index: 5; */
 }
+
 .c-profusao p {
     position: relative;
     top: -13px;
     left: -29px;
 }
+
 .c-profusao input {
     background-color: initial;
     cursor: default;
@@ -426,7 +476,8 @@ body {
     /* width: 20px; */
     /* height: 20px; */
 }
-.label-pequenas-opacidades-c-profusao label{
+
+.label-pequenas-opacidades-c-profusao label {
     font-size: 16px;
     /* font-weight: bold; */
     color: #008000;
@@ -444,7 +495,8 @@ body {
     margin: -1px 0px 0px 0px;
 
 }
-.label-pequenas-opacidades-c-profusao-01 label{
+
+.label-pequenas-opacidades-c-profusao-01 label {
     font-size: 16px;
     /* font-weight: bold; */
     color: #008000;
@@ -461,6 +513,7 @@ body {
     top: -151px;
     margin: -1px 0px 0px 0px;
 }
+
 .label-pequenas-opacidades-c-profusao-02 label {
     font-size: 16px;
     /* font-weight: bold; */
@@ -487,6 +540,7 @@ body {
     top: -24px;
     width: 10px;
 }
+
 .label-grandes-opacidades-c2 label {
     font-size: 18px;
     /* font-weight: bold; */
@@ -504,6 +558,7 @@ body {
     top: 16px;
     margin: 0px 0px 0px 0px;
 }
+
 .label-grandes-opacidades-c2 input {
     background-color: initial;
     cursor: default;
@@ -516,26 +571,29 @@ body {
     width: 15px;
     height: 15px;
 }
+
 .label-name-anormalidade-a3 {
     position: relative;
-    left: 64px;    
+    left: 64px;
     top: -40px;
     width: 382px;
     text-align: -webkit-left;
 }
-.label-anormalidade-a3 label{
-    font-size: 16px;    
+
+.label-anormalidade-a3 label {
+    font-size: 16px;
     color: #008000;
     cursor: pointer;
-    display: inline-flex;    
+    display: inline-flex;
     align-items: center;
     gap: 12px;
     padding: 42px;
     position: relative;
     left: 201px;
-    top: -114px;
+    top: -126px;
     margin: 0px -3px 0px -2px;
 }
+
 .label-anormalidade-a3 input {
     width: 20px;
     height: 20px;
@@ -546,13 +604,15 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .label-name-anormalidade-b3 {
     position: relative;
-    left: 64px;    
+    left: 64px;
     top: -40px;
     width: 382px;
     text-align: -webkit-left;
 }
+
 .label-anormalidade-b3 label {
     font-size: 16px;
     color: #008000;
@@ -566,7 +626,8 @@ body {
     top: -101px;
     margin: 0px -3px 0px -2px;
 }
-.label-anormalidade-b3 input{
+
+.label-anormalidade-b3 input {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
@@ -576,6 +637,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .label-anormalidade-b3-Parede-perfil label {
     font-size: 16px;
     color: #008000;
@@ -589,6 +651,7 @@ body {
     top: -53px;
     margin: -1px -6px 0px 0px;
 }
+
 .label-anormalidade-b3-Parede-perfil p {
     position: relative;
     left: 500px;
@@ -597,6 +660,7 @@ body {
     z-index: 20;
     text-align: -webkit-left;
 }
+
 .label-anormalidade-b3-Frontal-01 label {
     font-size: 16px;
     color: #008000;
@@ -610,7 +674,8 @@ body {
     top: -97px;
     margin: -1px -5px 0px -1px;
 }
-.label-anormalidade-b3-Frontal-01 p{
+
+.label-anormalidade-b3-Frontal-01 p {
     position: relative;
     left: 500px;
     top: -57px;
@@ -632,6 +697,7 @@ body {
     top: -143px;
     margin: 0px -5px 0px -1px;
 }
+
 .label-anormalidade-b3-Diafragma-02 p {
     position: relative;
     left: 500px;
@@ -640,7 +706,8 @@ body {
     z-index: 20;
     text-align: -webkit-left;
 }
-.label-anormalidade-b3-Outros-locais-03 label{
+
+.label-anormalidade-b3-Outros-locais-03 label {
     font-size: 16px;
     color: #008000;
     cursor: pointer;
@@ -653,7 +720,8 @@ body {
     top: -206px;
     margin: 0px -5px 0px -1px;
 }
-.label-anormalidade-b3-Outros-locais-03 p{
+
+.label-anormalidade-b3-Outros-locais-03 p {
     position: relative;
     left: 500px;
     top: -155px;
@@ -662,17 +730,153 @@ body {
     text-align: -webkit-left;
 }
 
-.div-local{
+.label-calcificacao-b3-01 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -206px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-calcificacao-b3-02 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -199px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-calcificacao-b3-03 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -194px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-calcificacao-b3-04 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 59px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 141px;
+    top: -188px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-extensao-parede-b3-01 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: -139px;
+    top: -531px;
+    margin: 0px -6px 0px 0px;
+}
+
+.label-extensao-parede-b3-01 .label-e-b3 {
+    position: relative;
+    left: -77px;
+    top: -524px;
+    width: 34px;
+}
+
+.label-extensao-parede-b3-01 .label-e1-b3 {
+    position: relative;
+    left: -65px;
+    top: -564px;
+    width: 30px;
+}
+.label-extensao-parede-b3-01 .label-e2-b3 {
+    position: relative;
+    left: -20px;
+    top: -556px;
+    width: 30px;
+}
+.label-extensao-parede-b3-01 p{
+    position: relative;
+    top: -552px;
+    left: -77px;
+    width: 236px;
+}
+.label-largura-opcional-b3-01 label {
+    font-size: 16px;
+    color: #008000;
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    border: 1px solid #008000;
+    padding: 5px;
+    position: relative;
+    left: 84px;
+    top: -771px;
+    margin: 0px -6px 0px 0px;
+}
+.label-largura-opcional-b3-01 .label-largura-b3{
+    position: relative;
+    left: 160px;
+    top: -766px;
+    width: 35px;
+}
+.label-largura-opcional-b3-01 .label-largura1-b3{
+    position: relative;
+    left: 175px;
+    top: -804px;
+    width: 40px;
+
+}
+.label-largura-opcional-b3-01 .label-largura2-b3{
+    left: 198px;
+    top: -799px;
+    width: 40px;
+}
+.label-largura-opcional-b3-01 p{
+    position: relative;
+    top: -793px;
+    left: 167px;
+    width: 119px;
+}
+
+
+.div-local {
     position: relative;
     left: -461px;
     top: -125px;
 }
+
 .div-local .text-local {
     position: relative;
     left: 590px;
     top: 3px;
     width: 60px;
 }
+
 .div-local input {
     background-color: initial;
     cursor: default;
@@ -684,6 +888,49 @@ body {
     width: 18px;
     height: 18px;
 }
+
+.div-calcificacao {
+    position: relative;
+    left: 660px;
+    top: -199px;
+    width: 218px;
+}
+
+.div-calcificacao .text-calcificacao {
+    position: relative;
+    left: 172px;
+    top: -202px;
+    width: 60px;
+}
+
+.div-extensao-parede {
+    position: relative;
+    left: 660px;
+    top: -199px;
+    width: 218px;
+}
+
+.div-extensao-parede .text-extensao {
+    position: relative;
+    left: -74px;
+    top: -520px;
+    width: 221px;
+}
+
+.div-largura-opcional{
+    position: relative;
+    left: 660px;
+    top: -199px;
+    width: 218px;
+}
+.div-largura-opcional .text-largura-opcional {
+    position: relative;
+    left: 172px;
+    top: -761px;
+    width: 263px;
+    text-align: -webkit-left;
+}
+
 .form-group-name {
     border: 1px solid #008000;
     margin-bottom: 20px;
@@ -833,6 +1080,7 @@ label {
     margin-bottom: 5px;
     cursor: pointer;
 }
+
 .label-rxgidital {
     position: relative;
     top: 8px;
@@ -849,14 +1097,16 @@ label {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o quadrado e o texto */
+    gap: 10px;
+    /* Espaço entre o quadrado e o texto */
 }
 
 .label-rxgidital input[type="radio"] {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
-    border-radius: 4px; /* Cantos levemente arredondados */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
     display: inline-block;
     margin: 0;
     cursor: pointer;
@@ -864,13 +1114,15 @@ label {
 }
 
 .label-rxgidital input[type="radio"]:checked {
-    background-color: #008000; /* Cor quando selecionado */
+    background-color: #008000;
+    /* Cor quando selecionado */
     border-color: #008000;
 }
 
 .label-rxgidital input[type="radio"]:focus {
     outline: 2px solid #008000;
 }
+
 .form-group-leitura-negatoscópio {
     border: 1px solid #008000;
     margin-bottom: 20px;
@@ -882,6 +1134,7 @@ label {
     left: 803px;
     top: -344px;
 }
+
 .leitura-negat {
     display: inline;
     font-weight: bold;
@@ -890,13 +1143,14 @@ label {
     padding: 0px;
 }
 
-.text-datarx{
+.text-datarx {
     display: inline;
     font-weight: bold;
     margin-bottom: 5px;
     position: absolute;
     padding: 0px;
 }
+
 .label-negatoscopio {
     position: relative;
     top: 7px;
@@ -913,14 +1167,16 @@ label {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o quadrado e o texto */
+    gap: 10px;
+    /* Espaço entre o quadrado e o texto */
 }
 
 .label-negatoscopio input[type="radio"] {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
-    border-radius: 4px; /* Cantos levemente arredondados */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
     display: inline-block;
     margin: 0;
     cursor: pointer;
@@ -928,13 +1184,15 @@ label {
 }
 
 .label-negatoscopio input[type="radio"]:checked {
-    background-color: #008000; /* Cor quando selecionado */
+    background-color: #008000;
+    /* Cor quando selecionado */
     border-color: #008000
 }
 
 .label-negatoscopio input[type="radio"]:focus {
     outline: 2px solid #008000
 }
+
 .label-qualidade-tecnica label {
     font-size: 16px;
     font-weight: bold;
@@ -950,18 +1208,22 @@ label {
     top: -49px;
     margin: 0px -3px 0px -2px;
 }
-.label-qualidade-tecnica input[type="radio"]{
+
+.label-qualidade-tecnica input[type="radio"] {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
-    border-radius: 4px; /* Cantos levemente arredondados */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
     display: inline-block;
     margin: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.label-qualidade-tecnica input[type="radio"]:checked{
-    background-color: #008000; /* Cor quando selecionado */
+
+.label-qualidade-tecnica input[type="radio"]:checked {
+    background-color: #008000;
+    /* Cor quando selecionado */
     border-color: #008000
 }
 
@@ -985,20 +1247,24 @@ label {
     margin: 0px -3px 0px -2px;
 }
 
-.labe-radiografia-normal input[type="radio"]{
+.labe-radiografia-normal input[type="radio"] {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
-    border-radius: 4px; /* Cantos levemente arredondados */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
     display: inline-block;
     margin: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.labe-radiografia-normal input[type="radio"]:checked{
-    background-color: #008000; /* Cor quando selecionado */
+
+.labe-radiografia-normal input[type="radio"]:checked {
+    background-color: #008000;
+    /* Cor quando selecionado */
     border-color: #008000
 }
+
 .labe-radiografia-normal input[type="radio"]:focus {
     outline: 2px solid #008000
 }
@@ -1018,24 +1284,30 @@ label {
     top: -94px;
     margin: 0px -3px 0px -2px;
 }
-.label-anormalidade-a2 input[type="radio"]{
+
+.label-anormalidade-a2 input[type="radio"] {
     width: 20px;
     height: 20px;
     border: 2px solid #008000;
-    border-radius: 4px; /* Cantos levemente arredondados */
+    border-radius: 4px;
+    /* Cantos levemente arredondados */
     display: inline-block;
     margin: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.label-anormalidade-a2 input[type="radio"]:checked{
-    background-color: #008000; /* Cor quando selecionado */
+
+.label-anormalidade-a2 input[type="radio"]:checked {
+    background-color: #008000;
+    /* Cor quando selecionado */
     border-color: #008000
 }
+
 .label-anormalidade-a2 input[type="radio"]:focus {
     outline: 2px solid #008000
 }
-.form-group-comentarios{
+
+.form-group-comentarios {
     position: relative;
     bottom: -1129px;
 }
@@ -1087,5 +1359,32 @@ button:hover {
     background-color: #005500;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container-name {
+        flex-direction: column;
+    }
 
+    .form-group-name,
+    .form-group-date,
+    .form-group-nrx,
+    .form-group-leitor {
+        flex: 1 1 100%;
+    }
 
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="radio"] {
+        font-size: 14px;
+    }
+}
