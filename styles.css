@@ -256,15 +256,15 @@ body {
     margin: -1px -1px;
     padding: 5px;
 }
-.form-group-3d{
+.form-group-3d {
     border-top: 1px solid #008000;
     border-left: 1px solid #008000;
     border-right: 1px solid #008000;
     position: relative;
-    width: 1084px;
+    width: 1086px;
     height: 236px;
-    top: -692px;
-    left: -1px;
+    top: -1017px;
+    left: -3px;
 }
 .form-group-3d .d3{
     border: 2px solid #008000;
@@ -1062,6 +1062,14 @@ body {
     top: -761px;
     width: 263px;
     text-align: -webkit-left;
+}
+.content-largura-opcional{
+    position: relative;
+    top: -519px;
+}
+.content-extensaao-parede{
+    position: relative;
+    top: -519px;
 }
 .div-local-d3{
     position: relative;
