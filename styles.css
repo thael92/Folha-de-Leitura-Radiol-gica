@@ -200,9 +200,9 @@ body {
     gap: 14px;
     padding: 5px;
     position: relative;
-    left: 74px;
-    top: -95px;
-    margin: -1px 0px -1px 0px;
+    left: 73px;
+    top: -128px;
+    margin: -1px 0px 0px 0px;
 }
 .Primaria {
     border: 1px solid #008000;
@@ -217,15 +217,59 @@ body {
     position: relative;
     top: -14px;
 }
-.secundaria{
+.name-forma-tamanho{
+    position: relative;
+    top: -35px;
+    left: -281px;
+
+}
+.label-pequenas-opacidades-b2-secundaria label{
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #008000;
+    cursor: pointer;
+    display: flex;
+    width: 63px;
+    height: 22px;
+    border: 1px solid #008000;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    position: relative;
+    left: -1px;
+    top: -27px;
+    margin: -1px 0px 0px 0px;
+
+}
+.label-pequenas-opacidades-b2-secundaria-01 label {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #008000;
+    cursor: pointer;
+    display: flex;
+    width: 56px;
+    height: 21px;
+    border: 1px solid #008000;
+    align-items: center;
+    gap: 14px;
+    padding: 5px;
+    position: relative;
+    left: 73px;
+    top: -126px;
+    margin: -1px 0px 0px 0px;
+}
+.secundaria {
     border: 1px solid #008000;
     position: relative;
     width: 141px;
     height: 123px;
-    left: 45px;
-    top: 20px;
+    left: 195px;
+    top: -172px;
     /* z-index: 5; */
-
+}
+.secundaria p{
+    position: relative;
+    top: -13px;
 }
 
 
