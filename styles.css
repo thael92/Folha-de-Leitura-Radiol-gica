@@ -257,7 +257,9 @@ body {
     padding: 5px;
 }
 .form-group-3d {
-    border: 1px solid #008000;
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
     position: relative;
     width: 1086px;
     height: 236px;
@@ -1109,6 +1111,72 @@ body {
     top: -126px;
     left: 0px;
 }
+.content-simbolos{
+    position: relative;
+    top: -842px;
+    left: -2px;
+}
+.content-simbolos .form-group-3a {
+    width: 1086px;
+    height: 144px;
+    position: relative;
+    top: -693px;
+}
+.content-simbolos .label-name-anormalidade-a3 {
+    margin: 23px -22px;
+}
+
+.content-simbolos .od-comentario {
+    position: relative;
+    top: -58px;
+    left: -390px;
+}
+
+.container-4a {
+    display: flex;
+    position: relative;
+    left: 37px;
+    top: -52px;
+    width: 1043px;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #008000;
+    width: 35px;
+    height: 58px;
+    text-align: center;
+    position: relative;
+    left: -9px;
+}
+.simbolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #008000;
+    width: 35px;
+    font-size: 22px;
+    height: 24px;
+    margin: -1px 1px;
+    text-align: center;
+}
+
+.checkboxes {
+    display: inline-flex;
+    gap: 0px;
+    width: 748px;
+}
+
+.item input[type="checkbox"] {
+    margin: auto;
+    display: block;
+    width: 21px;
+    height: 27px;
+    position: relative;
+}
 
 .form-group-name {
     border: 1px solid #008000;
@@ -1488,7 +1556,9 @@ label {
 
 .form-group-comentarios {
     position: relative;
-    bottom: 857px;
+    bottom: -32px;
+    width: 1086px;
+    height: 45px;
 }
 
 
@@ -1498,7 +1568,7 @@ textarea {
     height: 223px;
     padding: 8px;
     font-size: 30PX;
-    margin-top: 5px;
+    margin-top: 1000px;
     border: 1px solid #cccccc;
     background-color: rgba(139, 173, 240, 0.659);
     border-radius: 5px;
