@@ -1,21 +1,24 @@
-body {
+html, body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8f5;
-    margin: 0;
-    padding: 0;
+    background-color: #f0f8f5;   
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    width: 100%; /* Define a largura como 100% da viewport */
+    height: 100%; /* Define a altura como 100% da viewport */
+    box-sizing: border-box; /* Inclui bordas e padding dentro das dimensões */
 }
 
 .form-container {
-    width: 1100px;
-    height: 2199px;
+    width: 1087px;
+    height: 1819px;
     margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #008000;
-    border-radius: 10px;
+    /* padding: 20px; */
+    /* border: 2px solid #008000; */
+    /* border-radius: 10px; */
     background-color: #ffffff;
-    box-shadow: 0 4px 10px #008000;
-    page-break-inside: avoid;
-    /* Para impressão em PDF */
+    /* box-shadow: 0 4px 10px #008000; */
+    /* page-break-inside: avoid; */
+    z-index: 20px;
 }
 
 .form-container-name {
@@ -196,7 +199,9 @@ body {
 }
 
 .form-group-3a {
-    border: 1px solid #008000;
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
     margin-bottom: 20px;
     display: flexs;
     flex-direction: column;
@@ -1102,6 +1107,9 @@ body {
 }
 .oustras-anormalidades .form-group-3a{
     width: 1086px;
+    border-top: 1px solid #008000;
+    border-left: 1px solid #008000;
+    border-right: 1px solid #008000;
 }
 .oustras-anormalidades .label-name-anormalidade-a3 {
     margin: 23px 0px
@@ -1139,6 +1147,22 @@ body {
     top: -52px;
     width: 1043px;
 }
+
+.content-comentario {
+    position: relative;
+    top: -885px;
+    width: 1099px;
+    height: 261px;
+}
+.content-comentario .form-group-3a{
+    position: relative;
+    width: 1085px;
+    height: 260px;
+    left: -2px;
+
+}
+
+
 
 
 .item {
@@ -1561,6 +1585,73 @@ label {
     height: 45px;
 }
 
+.form-group-data-leitura {
+    border: 1px solid #008000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 307px;
+    height: 111px;
+    margin: 4px 803px;
+    top: -1560px;
+    left: -806px;
+}
+
+.form-group-data-leitura label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group-data-leitura p {
+    position: relative;
+    top: -28px;
+    font-size: 19px;
+    left: 1px;
+    width: 155px;
+    margin: 28px -69px 28px -1px;
+}
+
+.form-group-data-leitura #date {
+    width: 80%;
+    height: 40%;
+    padding: 8px;
+    margin-top: 24px;
+    border: 1px solid #008000;
+    color: #008000;
+    border-radius: 0px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: x-large;
+    top: 14px;
+    left: -40px;
+}
+
+.form-group-data-leitura canvas {
+    border: 1px solid #008000;
+    cursor: crosshair;
+}
+
+.form-group-assinatura {
+    position: relative;
+    top: -1677px;
+    left: 305px;
+    width: 778px;
+    height: 110px;
+    font-size: 19px;
+    border: 1px solid #008000;
+    color: #008000;
+}
+.form-group-assinatura label{
+    position: relative;
+    left: -332px;
+}
+.fjdf-cod {
+    position: relative;
+    top: -1688px;
+    left: -297px;
+    color: #008000;
+}
+
 
 
 textarea {
@@ -1592,19 +1683,18 @@ textarea {
     resize: none;
 }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #008000;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+textarea {
+    width: 1028px;
+    height: 231px;
+    padding: 8px;
+    font-size: 30PX;
+    margin-top: 1000px;
+    border: 1px solid #cccccc;
+    background-color:#dde4ff;
+    box-sizing: border-box;
     position: relative;
-    bottom: -1129px;
+    top: -1056px;
+    left: 24px;
 }
 
 button:hover {
