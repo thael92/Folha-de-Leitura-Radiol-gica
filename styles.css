@@ -1731,34 +1731,32 @@ button:hover {
     }
     
 }
-/* Estilo para impressão */
+/* Configurações globais para impressão */
 @media print {
     body {
         margin: 0;
         padding: 0;
-        zoom: 60%; /* Ajusta o zoom para caber no papel */
         background: none;
+        display: flex; /* Ativa o flexbox para centralização */
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        height: 100vh; /* Garante que ocupa toda a altura da página */
     }
 
-    .content {
-        box-shadow: none;
-        width: auto; /* Preenche toda a largura da página de impressão */
-        margin: 0;
+    .form-container {
+        width: 60%; /* Define 60% da largura da página */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding: 20px; /* Espaçamento interno */
+        border: 1px solid #ccc; /* Opcional: borda para destaque */
+        box-shadow: none; /* Remove sombras para impressão */
+        page-break-inside: avoid; /* Evita quebras no meio do elemento */
+        background: white; /* Garante um fundo branco */
     }
 }
+
+/* Configurações da página de impressão */
 @page {
-    size: A4; /* Ajusta o tamanho do papel para A4 */
-    margin: 1cm; /* Define margens apropriadas */
+    size: A4; /* Define o tamanho do papel como A4 */
+    margin: 0; /* Remove margens extras da página */
 }
-@media print {
-    /* Impede quebras de página entre elementos específicos */
-    .content {
-        page-break-before: auto; /* Automático, se necessário */
-        page-break-after: auto; /* Automático, se necessário */
-    }
 
-    /* Evita quebras dentro de um elemento */
-    .content {
-        page-break-inside: avoid;
-    }
-}

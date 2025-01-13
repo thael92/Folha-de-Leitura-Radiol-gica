@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
     <link rel="icon" href="./img/logo-Photoroom.png" type="image/x-icon">
     <title>Folha de Leitura Radiológica - OIT 2011</title>
     <link rel="stylesheet" href="styles.css">
@@ -322,7 +323,7 @@
 
                             </div>
                         </div>
-                        
+
 
                         <div class="form-group-3c">
                             <div class="c3">3C</div>
@@ -448,15 +449,17 @@
                             </div>
                         </div>
                         <div class="oustras-anormalidades">
-                        <div class="form-group-3a">
-                            <div class="a3">4A</div>
-                            <p class="label-name-anormalidade-a3">OUTRAS ANORMALIDADES:
-                            </p>
-                            <div class="label-anormalidade-a3">
-                                <label><input type="radio" name="oustras-anormalidades" value="sim" required>SIM (complete 4B)</label>
-                                <label><input type="radio" name="oustras-anormalidades" value="nao">NÃO (finalizar a leitura)</label>
+                            <div class="form-group-3a">
+                                <div class="a3">4A</div>
+                                <p class="label-name-anormalidade-a3">OUTRAS ANORMALIDADES:
+                                </p>
+                                <div class="label-anormalidade-a3">
+                                    <label><input type="radio" name="oustras-anormalidades" value="sim" required>SIM
+                                        (complete 4B)</label>
+                                    <label><input type="radio" name="oustras-anormalidades" value="nao">NÃO (finalizar a
+                                        leitura)</label>
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                         <div class="content-simbolos">
@@ -578,37 +581,38 @@
                                         <div class="simbolo">od</div>
                                         <input type="checkbox" id="cv" name="simbolo" value="cv">
                                     </div>
-                                    
+
                                 </div>
                                 <p class="od-comentario">(*) od: Necessário um comentário.</p>
                             </div>
                         </div>
 
                         <div class="content-comentario">
-                        <div class="form-group-3a">
-                            <div class="a3">4C</div>
-                            <p class="label-name-anormalidade-a3">COMENTÁRIOS:
-                            </p>
-                            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-                        
-                        </div>                       
-                        
-                        
-                    </div>
-                    <div class="form-group-data-leitura">
-                        <p>DATA DA LEITURA</p>
-                        <label for="date"></label>
-                        <input type="date" id="date" name="date" required>
-                    </div>
-            
-                    <div class="form-group-assinatura" id="signature-pad">
-                        <label>ASSINATURA</label>                     
-                    </div>
-                    <p class="fjdf-cod">FJDF/CÓD. 300179.9 - A4 - 1x1 - Versão 2.1 (06/2012 - SMA-Lígia)</p>
+                            <div class="form-group-3a">
+                                <div class="a3">4C</div>
+                                <p class="label-name-anormalidade-a3">COMENTÁRIOS:
+                                </p>
+                                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                            </div>
+
+
+                        </div>
+                        <div class="form-group-data-leitura">
+                            <p>DATA DA LEITURA</p>
+                            <label for="date"></label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group-assinatura" id="signature-pad">
+                            <label>ASSINATURA</label>
+                        </div>
+                        <p class="fjdf-cod">FJDF/CÓD. 300179.9 - A4 - 1x1 - Versão 2.1 (06/2012 - SMA-Lígia)</p>
 
             </form>
         </div>
-        <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
