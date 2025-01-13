@@ -1,11 +1,17 @@
-html, body {
+html,
+body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8f5;   
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento padrão */
-    width: 100%; /* Define a largura como 100% da viewport */
-    height: 100%; /* Define a altura como 100% da viewport */
-    box-sizing: border-box; /* Inclui bordas e padding dentro das dimensões */
+    background-color: #f0f8f5;
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    width: 100%;
+    /* Define a largura como 100% da viewport */
+    height: 100%;
+    /* Define a altura como 100% da viewport */
+    box-sizing: border-box;
+    /* Inclui bordas e padding dentro das dimensões */
 }
 
 .form-container {
@@ -222,7 +228,7 @@ html, body {
     padding: 5px;
 }
 
-.form-group-3b {    
+.form-group-3b {
     border-top: 1px solid #008000;
     border-left: 1px solid #008000;
     border-right: 1px solid #008000;
@@ -252,6 +258,7 @@ html, body {
     top: -996px;
     left: -2px;
 }
+
 .form-group-3c .c3 {
     border: 2px solid #008000;
     width: 22px;
@@ -261,6 +268,7 @@ html, body {
     margin: -1px -1px;
     padding: 5px;
 }
+
 .form-group-3d {
     border-top: 1px solid #008000;
     border-left: 1px solid #008000;
@@ -271,7 +279,8 @@ html, body {
     top: -1017px;
     left: -3px;
 }
-.form-group-3d .d3{
+
+.form-group-3d .d3 {
     border: 2px solid #008000;
     width: 22px;
     height: 23px;
@@ -835,18 +844,21 @@ html, body {
     top: -564px;
     width: 30px;
 }
+
 .label-extensao-parede-b3-01 .label-e2-b3 {
     position: relative;
     left: -20px;
     top: -556px;
     width: 30px;
 }
-.label-extensao-parede-b3-01 p{
+
+.label-extensao-parede-b3-01 p {
     position: relative;
     top: -552px;
     left: -77px;
     width: 236px;
 }
+
 .label-largura-opcional-b3-01 label {
     font-size: 16px;
     color: #008000;
@@ -860,32 +872,36 @@ html, body {
     top: -771px;
     margin: 0px -6px 0px 0px;
 }
-.label-largura-opcional-b3-01 .label-largura-b3{
+
+.label-largura-opcional-b3-01 .label-largura-b3 {
     position: relative;
     left: 160px;
     top: -766px;
     width: 35px;
 }
-.label-largura-opcional-b3-01 .label-largura1-b3{
+
+.label-largura-opcional-b3-01 .label-largura1-b3 {
     position: relative;
     left: 175px;
     top: -804px;
     width: 40px;
 
 }
-.label-largura-opcional-b3-01 .label-largura2-b3{
+
+.label-largura-opcional-b3-01 .label-largura2-b3 {
     left: 198px;
     top: -799px;
     width: 40px;
 }
-.label-largura-opcional-b3-01 p{
+
+.label-largura-opcional-b3-01 p {
     position: relative;
     top: -793px;
     left: 167px;
     width: 119px;
 }
 
-.label-name-costofrenico-c3{
+.label-name-costofrenico-c3 {
     position: relative;
     left: 64px;
     top: -37px;
@@ -893,6 +909,7 @@ html, body {
     text-align: -webkit-left;
 
 }
+
 .label-costofrenico-c3 label {
     font-size: 16px;
     color: #008000;
@@ -907,13 +924,14 @@ html, body {
     margin: 0px -6px 0px 0px;
 }
 
-.label-name-pleural-difuso-d3{
+.label-name-pleural-difuso-d3 {
     position: relative;
     left: 64px;
     top: -37px;
     width: 382px;
     text-align: -webkit-left;
 }
+
 .label-pleural-difuso-d3 label {
     font-size: 16px;
     color: #008000;
@@ -927,11 +945,13 @@ html, body {
     top: -96px;
     margin: 0px -3px 0px -2px;
 }
-.label-pleural-difuso-d3 input{
+
+.label-pleural-difuso-d3 input {
     width: 20px;
     height: 20px;
 }
-.label-pleural-difuso-d3-Parede-perfi label{
+
+.label-pleural-difuso-d3-Parede-perfi label {
     font-size: 16px;
     color: #008000;
     cursor: pointer;
@@ -944,6 +964,7 @@ html, body {
     top: -55px;
     margin: -1px -5px 0px -1px;
 }
+
 .label-pleural-difuso-d3-Parede-perfi p {
     position: relative;
     left: 500px;
@@ -952,7 +973,8 @@ html, body {
     z-index: 20;
     text-align: -webkit-left;
 }
-.label-pleural-difuso-d3-Frontal-01 label{
+
+.label-pleural-difuso-d3-Frontal-01 label {
     font-size: 16px;
     color: #008000;
     cursor: pointer;
@@ -965,7 +987,8 @@ html, body {
     top: -97px;
     margin: -1px -5px 0px -1px;
 }
-.label-pleural-difuso-d3-Frontal-01 p{
+
+.label-pleural-difuso-d3-Frontal-01 p {
     position: relative;
     left: 500px;
     top: -57px;
@@ -973,6 +996,7 @@ html, body {
     z-index: 20;
     text-align: -webkit-left;
 }
+
 .label-calcificacao-d3-01 label {
     font-size: 16px;
     color: #008000;
@@ -986,7 +1010,8 @@ html, body {
     top: -21px;
     margin: -1px -5px 0px -1px;
 }
-.label-calcificacao-d3-02 label{
+
+.label-calcificacao-d3-02 label {
     font-size: 16px;
     color: #008000;
     cursor: pointer;
@@ -1055,12 +1080,13 @@ html, body {
     width: 221px;
 }
 
-.div-largura-opcional{
+.div-largura-opcional {
     position: relative;
     left: 660px;
     top: -199px;
     width: 218px;
 }
+
 .div-largura-opcional .text-largura-opcional {
     position: relative;
     left: 172px;
@@ -1068,68 +1094,81 @@ html, body {
     width: 263px;
     text-align: -webkit-left;
 }
-.content-largura-opcional{
+
+.content-largura-opcional {
     position: relative;
     top: -519px;
 }
-.content-extensaao-parede{
+
+.content-extensaao-parede {
     position: relative;
     top: -519px;
 }
-.div-local-d3{
+
+.div-local-d3 {
     position: relative;
     left: -461px;
     top: -125px;
 }
-.div-local-d3 .text-local-d3{
+
+.div-local-d3 .text-local-d3 {
     position: relative;
     left: 590px;
     top: 3px;
     width: 60px;
 
 }
-.div-calcificacao-d3{
+
+.div-calcificacao-d3 {
     position: relative;
     left: 806px;
     top: -199px;
     width: 218px;
 }
-.div-calcificacao-d3 .text-calcificacao-03{
+
+.div-calcificacao-d3 .text-calcificacao-03 {
     position: relative;
     left: 13px;
     top: -10px;
     width: 60px;
 }
-.oustras-anormalidades{
+
+.oustras-anormalidades {
     position: relative;
     top: -842px;
     left: -2px;
 }
-.oustras-anormalidades .form-group-3a{
+
+.oustras-anormalidades .form-group-3a {
     width: 1086px;
     border-top: 1px solid #008000;
     border-left: 1px solid #008000;
     border-right: 1px solid #008000;
 }
+
 .oustras-anormalidades .label-name-anormalidade-a3 {
     margin: 23px 0px
 }
-.oustras-anormalidades .label-anormalidade-a3 label{
+
+.oustras-anormalidades .label-anormalidade-a3 label {
     position: relative;
     top: -126px;
     left: 0px;
 }
-.content-simbolos{
+
+.content-simbolos {
     position: relative;
     top: -842px;
     left: -2px;
 }
+
 .content-simbolos .form-group-3a {
     width: 1086px;
     height: 144px;
     position: relative;
     top: -693px;
 }
+
 .content-simbolos .label-name-anormalidade-a3 {
     margin: 23px -22px;
 }
@@ -1154,7 +1193,8 @@ html, body {
     width: 1099px;
     height: 261px;
 }
-.content-comentario .form-group-3a{
+
+.content-comentario .form-group-3a {
     position: relative;
     width: 1085px;
     height: 260px;
@@ -1176,6 +1216,7 @@ html, body {
     position: relative;
     left: -9px;
 }
+
 .simbolo {
     display: flex;
     flex-direction: column;
@@ -1602,6 +1643,7 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 .form-group-data-leitura p {
     position: relative;
     top: -28px;
@@ -1641,10 +1683,12 @@ label {
     border: 1px solid #008000;
     color: #008000;
 }
-.form-group-assinatura label{
+
+.form-group-assinatura label {
     position: relative;
     left: -323px;
 }
+
 .fjdf-cod {
     position: relative;
     top: -1688px;
@@ -1729,34 +1773,82 @@ button:hover {
     input[type="radio"] {
         font-size: 14px;
     }
-    
+
 }
-/* Configurações globais para impressão */
+
+
+
+/* Configurações de impressão */
 @media print {
     body {
         margin: 0;
         padding: 0;
         background: none;
-        display: flex; /* Ativa o flexbox para centralização */
-        align-items: center; /* Centraliza verticalmente */
-        justify-content: center; /* Centraliza horizontalmente */
-        height: 100vh; /* Garante que ocupa toda a altura da página */
     }
 
     .form-container {
-        width: 60%; /* Define 60% da largura da página */
-        height: auto; /* Ajusta a altura automaticamente */
-        padding: 20px; /* Espaçamento interno */
-        border: 1px solid #ccc; /* Opcional: borda para destaque */
-        box-shadow: none; /* Remove sombras para impressão */
-        page-break-inside: avoid; /* Evita quebras no meio do elemento */
-        background: white; /* Garante um fundo branco */
+        box-shadow: none;
+        /* Remove sombras no PDF */
+        width: 100%;
+        /* Ocupa toda a largura */
+        padding: 0;
+        /* Remove espaçamento extra */
+    }
+
+    /* Configurações da página de impressão */
+    @page {
+        size: A4;
+        /* Define o tamanho do papel como A4 */
+        margin: 0;
+        /* Remove margens extras da página */
     }
 }
 
-/* Configurações da página de impressão */
-@page {
-    size: A4; /* Define o tamanho do papel como A4 */
-    margin: 0; /* Remove margens extras da página */
+
+/* Ajustes de zoom com @media */
+@media (max-width: 1200px) {
+    body {
+        transform: scale(0.9); /* Reduz 10% */
+        width: 38%;
+        height: 50%;
+    }
 }
 
+@media (max-width: 992px) {
+    body {
+        transform: scale(0.7);
+        width: 38%;
+        height: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        transform: scale(0.7); /* Reduz 30% */
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        transform: scale(0.4);
+        width: 31%;
+        height: 0%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        transform: scale(0.4);
+        width: 3%;
+        height: 0%;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        transform: scale(0.3);
+        width: 7%;
+        height: 0%;
+    }
+}
