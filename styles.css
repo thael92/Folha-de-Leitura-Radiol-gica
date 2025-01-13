@@ -1216,14 +1216,14 @@ html, body {
 
 .form-group-date {
     border: 1px solid #008000;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     display: flex;
     flex-direction: row;
     position: relative;
     width: 267px;
     height: 59px;
-    margin: 4px 803px;
     top: -95px;
+    left: 802px;
 }
 
 .form-group-nrx {
@@ -1590,11 +1590,11 @@ label {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 307px;
+    width: 309px;
     height: 111px;
-    margin: 4px 803px;
+    /* margin: 0px 0px 0px 0px; */
     top: -1560px;
-    left: -806px;
+    left: -2px;
 }
 
 .form-group-data-leitura label {
@@ -1607,7 +1607,7 @@ label {
     top: -28px;
     font-size: 19px;
     left: 1px;
-    width: 155px;
+    width: 193px;
     margin: 28px -69px 28px -1px;
 }
 
@@ -1633,9 +1633,9 @@ label {
 
 .form-group-assinatura {
     position: relative;
-    top: -1677px;
-    left: 305px;
-    width: 778px;
+    top: -1673px;
+    left: 309px;
+    width: 774px;
     height: 110px;
     font-size: 19px;
     border: 1px solid #008000;
@@ -1643,7 +1643,7 @@ label {
 }
 .form-group-assinatura label{
     position: relative;
-    left: -332px;
+    left: -323px;
 }
 .fjdf-cod {
     position: relative;
@@ -1688,13 +1688,13 @@ textarea {
     height: 231px;
     padding: 8px;
     font-size: 30PX;
-    margin-top: 1000px;
     border: 1px solid #cccccc;
-    background-color:#dde4ff;
+    background-color: #dde4ff;
     box-sizing: border-box;
     position: relative;
-    top: -1056px;
+    top: -55px;
     left: 24px;
+    margin: 0px 0px 0px 0px;
 }
 
 button:hover {
@@ -1728,5 +1728,37 @@ button:hover {
     input[type="date"],
     input[type="radio"] {
         font-size: 14px;
+    }
+    
+}
+/* Estilo para impressão */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        zoom: 60%; /* Ajusta o zoom para caber no papel */
+        background: none;
+    }
+
+    .content {
+        box-shadow: none;
+        width: auto; /* Preenche toda a largura da página de impressão */
+        margin: 0;
+    }
+}
+@page {
+    size: A4; /* Ajusta o tamanho do papel para A4 */
+    margin: 1cm; /* Define margens apropriadas */
+}
+@media print {
+    /* Impede quebras de página entre elementos específicos */
+    .content {
+        page-break-before: auto; /* Automático, se necessário */
+        page-break-after: auto; /* Automático, se necessário */
+    }
+
+    /* Evita quebras dentro de um elemento */
+    .content {
+        page-break-inside: avoid;
     }
 }
