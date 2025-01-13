@@ -10,7 +10,7 @@ body {
     /* Define a largura como 100% da viewport */
     height: 100%;
     /* Define a altura como 100% da viewport */
-    box-sizing: border-box;
+    box-sizing:border-box;
     /* Inclui bordas e padding dentro das dimensões */
 }
 
@@ -1778,36 +1778,10 @@ button:hover {
 
 
 
-/* Configurações de impressão */
-@media print {
-    body {
-        margin: 0;
-        padding: 0;
-        background: none;
-    }
-
-    .form-container {
-        box-shadow: none;
-        /* Remove sombras no PDF */
-        width: 100%;
-        /* Ocupa toda a largura */
-        padding: 0;
-        /* Remove espaçamento extra */
-    }
-
-    /* Configurações da página de impressão */
-    @page {
-        size: A4;
-        /* Define o tamanho do papel como A4 */
-        margin: 0;
-        /* Remove margens extras da página */
-    }
-}
-
 
 /* Ajustes de zoom com @media */
 @media (max-width: 1200px) {
-    body {
+    .form-container {
         transform: scale(0.9); /* Reduz 10% */
         width: 38%;
         height: 50%;
@@ -1815,7 +1789,7 @@ button:hover {
 }
 
 @media (max-width: 992px) {
-    body {
+    .form-container {
         transform: scale(0.7);
         width: 38%;
         height: 0%;
@@ -1823,7 +1797,7 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    body {
+    .form-container {
         transform: scale(0.7); /* Reduz 30% */
         width: 0%;
         height: 0%;
@@ -1831,14 +1805,14 @@ button:hover {
 }
 
 @media (max-width: 576px) {
-    body {
+    .form-container {
         transform: scale(0.4);
         width: 31%;
         height: 0%;
     }
 }
 @media (max-width: 480px) {
-    body {
+    .form-container {
         transform: scale(0.4);
         width: 3%;
         height: 0%;
@@ -1846,7 +1820,7 @@ button:hover {
 }
 
 @media (max-width: 360px) {
-    body {
+    .form-container {
         transform: scale(0.3);
         width: 7%;
         height: 0%;
