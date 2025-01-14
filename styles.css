@@ -332,7 +332,7 @@ body {
     color: #008000;
     cursor: pointer;
     display: flex;
-    width: 56px;
+    width: 57px;
     height: 22px;
     border: 1px solid #008000;
     align-items: center;
@@ -340,7 +340,7 @@ body {
     padding: 5px;
     position: relative;
     left: 73px;
-    top: -128px;
+    top: -126px;
     margin: -1px 0px 0px 0px;
 }
 
@@ -380,7 +380,7 @@ body {
     padding: 5px;
     position: relative;
     left: -1px;
-    top: -27px;
+    top: -26px;
     margin: -1px 0px 0px 0px;
 
 }
@@ -392,7 +392,7 @@ body {
     cursor: pointer;
     display: flex;
     width: 56px;
-    height: 21px;
+    height: 23px;
     border: 1px solid #008000;
     align-items: center;
     gap: 14px;
@@ -454,7 +454,7 @@ body {
     padding: 5px;
     position: relative;
     left: 73px;
-    top: -151px;
+    top: -149px;
     margin: -1px 0px 0px 0px;
 }
 
@@ -550,7 +550,7 @@ body {
     padding: 5px;
     position: relative;
     left: 73px;
-    top: -151px;
+    top: -149px;
     margin: -1px 0px 0px 0px;
 }
 
@@ -568,7 +568,7 @@ body {
     padding: 5px;
     position: relative;
     left: 140px;
-    top: -277px;
+    top: -274px;
     margin: -1px 0px 0px 0px;
 }
 
@@ -1356,16 +1356,16 @@ body {
 }
 
 .input-date {
-    width: 81%;
-    padding: 8px;
-    margin-top: 24px;
+    width: 78%;
+    height: 57%;
+    padding: 10px;
     border: 1px solid #008000;
     color: #008000;
     border-radius: 0px;
     box-sizing: border-box;
     position: relative;
     font-size: x-large;
-    top: -5px;
+    top: 16px;
     left: 21px;
 }
 
