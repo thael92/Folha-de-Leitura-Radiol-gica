@@ -24,7 +24,7 @@ body {
     background-color: #ffffff;
     /* box-shadow: 0 4px 10px #008000; */
     /* page-break-inside: avoid; */
-    z-index: 20px;
+   
 }
 
 .form-container-name {
@@ -1741,88 +1741,31 @@ textarea {
     margin: 0px 0px 0px 0px;
 }
 
-button:hover {
-    background-color: #005500;
-}
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .form-container-name {
-        flex-direction: column;
+
+/* Rotação de tela apenas para dispositivos móveis */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .rotate-prompt {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 1.2em;
     }
 
-    .form-group-name,
-    .form-group-date,
-    .form-group-nrx,
-    .form-group-leitor {
-        flex: 1 1 100%;
-    }
-
-    h1 {
-        font-size: 1.25rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1rem;
-    }
-
-    input[type="text"],
-    input[type="date"],
-    input[type="radio"] {
-        font-size: 14px;
-    }
-
-}
-
-
-
-
-/* Ajustes de zoom com @media */
-@media (max-width: 1200px) {
-    .form-container {
-        transform: scale(0.9); /* Reduz 10% */
-        width: 38%;
-        height: 50%;
+    .rotate-prompt::after {
+        content: "Por favor, gire seu dispositivo para melhor visualização";
+        padding: 20px;
     }
 }
 
-@media (max-width: 992px) {
-    .form-container {
-        transform: scale(0.7);
-        width: 38%;
-        height: 0%;
-    }
-}
 
-@media (max-width: 768px) {
-    .form-container {
-        transform: scale(0.7); /* Reduz 30% */
-        width: 0%;
-        height: 0%;
-    }
-}
 
-@media (max-width: 576px) {
-    .form-container {
-        transform: scale(0.4);
-        width: 31%;
-        height: 0%;
-    }
-}
-@media (max-width: 480px) {
-    .form-container {
-        transform: scale(0.4);
-        width: 3%;
-        height: 0%;
-    }
-}
-
-@media (max-width: 360px) {
-    .form-container {
-        transform: scale(0.3);
-        width: 7%;
-        height: 0%;
-    }
-}
