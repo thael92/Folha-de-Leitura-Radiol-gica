@@ -5,350 +5,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
     <link rel="icon" href="./img/logo-Photoroom.png" type="image/x-icon">
     <title>Folha de Leitura Radiológica - OIT 2011</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
-    <div class="form-container">
-        <div class="form-header">
-            <div class="form-group-logo"><img src="./img/logo.jpg" alt="" width="200px"></div>
-            <div class="form-group-logo-text">
-                <h1>FOLHA DE LEITURA RADIOLÓGICA - CLASSIFICAÇÃO INTERNACIONAL
-                    DE RADIOGRAFIAS DE PNEUMOCONIOSE - OIT 2011</h1>
-            </div>
-            <form id="radiological-form">
-                <div class="form-container-name">
-                    <div class="form-group-name">
-                        <label for="nome">Nome</label>
-                        <input class="input-name" type="text" id="nome" name="nome" required>
-                    </div>
-
-                    <div class="form-group-date">
-                        <label class="text-datarx" for="data-rx">Data do RX</label>
-                        <input class="input-date" type="date" id="data-rx" name="data-rx" required>
-                    </div>
-
-                    <div class="form-group-nrx">
-                        <label for="numero-rx">Nº do RX</label>
-                        <input class="input-numero-rx" type="text" id="numero-rx" name="numero-rx" required>
-                    </div>
-                    <div class="form-group-leitor">
-                        <label for="leitor">Leitor (Iniciais)</label>
-                        <input class="input-Leitor" type="text" id="leitor" name="leitor" required>
-                    </div>
-
-                    <div class="form-group-rxdigital">
-                        <label>RX Digital</label>
-                        <div class="label-rxgidital">
-                            <label><input type="radio" name="rx-digital" value="sim" required> Sim</label>
-                            <label><input type="radio" name="rx-digital" value="nao"> Não</label>
-                        </div>
-                    </div>
-                    <div class="form-group-leitura-negatoscópio">
-
-                        <label class="leitura-negat">Leitura em Negatoscópio</label>
-
-                        <div class="label-negatoscopio">
-                            <label><input type="radio" name="negatoscopio" value="sim" required> Sim</label>
-                            <label><input type="radio" name="negatoscopio" value="nao"> Não</label>
-                        </div>
-                    </div>
-
+    <div class="zoom-wrapper">
+        <div class="form-container">
+            <div class="form-header">
+                <div class="form-group-logo"><img src="./img/logo.jpg" alt="" width="200px"></div>
+                <div class="form-group-logo-text">
+                    <h1>FOLHA DE LEITURA RADIOLÓGICA - CLASSIFICAÇÃO INTERNACIONAL
+                        DE RADIOGRAFIAS DE PNEUMOCONIOSE - OIT 2011</h1>
                 </div>
-
-
-                <div class="form-group-qualidade-tecnica">
-                    <div class="a1">1A</div>
-                    <label class="name-label-qualidade">QUALIDADE TÉCNICA:</label>
-                    <div class="label-qualidade-tecnica">
-                        <label><input type="radio" name="qualidade" value="1" required> 1</label>
-                        <label><input type="radio" name="qualidade" value="2"> 2</label>
-                        <label><input type="radio" name="qualidade" value="3"> 3</label>
-                        <label><input type="radio" name="qualidade" value="4"> 4</label>
-                    </div>
-                    <label class="name-label-comentario">Comentário:</label>
-                    <input class="input-comentario" type="text" id="comentario" name="Comentário" required>
-                </div>
-
-                <div class="form-group-radiografia-normal">
-                    <div class="b1">1B</div>
-                    <label class="name-label-radiografia-normal">RADIOGRAFIA NORMAL:</label>
-                    <div class="labe-radiografia-normal">
-                        <label><input type="radio" name="radiografia-normal" value="1" required> SIM (finalizar a
-                            leitura)</label>
-                        <label><input type="radio" name="radiografia-normal" value="2"> NÃO (passe p/ a seção 2)</label>
-
-                    </div>
-                </div>
-
-
-
-                <div class="form-group-2a">
-                    <div class="a2">2A</div>
-                    <label class="label-name-anormalidade-a2">ALGUMA ANORMALIDADE DE PARÊNQUIMA <br>
-                        CONSISTENTE COM PNEUMOCONIOSE:</label>
-                    <div class="label-anormalidade-a2">
-                        <label><input type="radio" name="anormalidade-parenquima" value="sim" required> SIM (complete 2B
-                            e 2C)</label>
-                        <label><input type="radio" name="anormalidade-parenquima" value="nao"> NÃO (passe para a seção
-                            3)</label>
-                    </div>
-                </div>
-
-                <div class="form-group-2b">
-                    <div class="b2">2B</div>
-                    <label class="label-name-pequenas-opacidades-b2">PEQUENAS OPACIDADES:</label>
-                    <p class="name-forma-tamanho"> a) Forma / tamanho</p>
-                    <div class="Primaria">
-                        <p>Primária</p>
-                        <div class="label-pequenas-opacidades-b2">
-                            <label><input type="radio" name="Primaria" value="1" required> p</label>
-                            <label><input type="radio" name="Primaria" value="2"> q</label>
-                            <label><input type="radio" name="Primaria" value="3"> r</label>
-
+                <form id="radiological-form">
+                    <div class="form-container-name">
+                        <div class="form-group-name">
+                            <label for="nome">Nome</label>
+                            <input class="input-name" type="text" id="nome" name="nome" required>
                         </div>
-                        <div class="label-pequenas-opacidades-b2-01">
-                            <label><input type="radio" name="Primaria" value="4"> s</label>
-                            <label><input type="radio" name="Primaria" value="5"> t</label>
-                            <label><input type="radio" name="Primaria" value="6"> u</label>
+
+                        <div class="form-group-date">
+                            <label class="text-datarx" for="data-rx">Data do RX</label>
+                            <input class="input-date" type="date" id="data-rx" name="data-rx" required>
                         </div>
-                    </div>
 
-                    <div class="secundaria">
-                        <p>Secundária</p>
-                        <div class="label-pequenas-opacidades-b2-secundaria">
-                            <label><input type="radio" name="secundaria" value="1" required> p</label>
-                            <label><input type="radio" name="secundaria" value="2"> q</label>
-                            <label><input type="radio" name="secundaria" value="3"> r</label>
-
+                        <div class="form-group-nrx">
+                            <label for="numero-rx">Nº do RX</label>
+                            <input class="input-numero-rx" type="text" id="numero-rx" name="numero-rx" required>
                         </div>
-                        <div class="label-pequenas-opacidades-b2-secundaria-01">
-                            <label><input type="radio" name="secundaria" value="4"> s</label>
-                            <label><input type="radio" name="secundaria" value="5"> t</label>
-                            <label><input type="radio" name="secundaria" value="6"> u</label>
+                        <div class="form-group-leitor">
+                            <label for="leitor">Leitor (Iniciais)</label>
+                            <input class="input-Leitor" type="text" id="leitor" name="leitor" required>
                         </div>
-                    </div>
 
-
-                    <div class="b-zonas">
-                        <p> b) Zonas</p>
-                        <div class="label-pequenas-opacidades-b-Zonas">
-                            <label>
-                                <p class="name-D">D</p>
-                            </label>
-                            <label><input type="checkbox" name="Zonas" value="1"> </label>
-                            <label><input type="checkbox" name="Zonas" value="2"> </label>
-                            <label><input type="checkbox" name="Zonas" value="3"> </label>
-
-                        </div>
-                        <div class="label-pequenas-opacidades-b-Zonas-01">
-                            <label>
-                                <p class="name-E">E</p>
-                            </label>
-                            <label><input type="checkbox" name="Zonas" value="4"> </label>
-                            <label><input type="checkbox" name="Zonas" value="5"> </label>
-                            <label><input type="checkbox" name="Zonas" value="6"> </label>
-                        </div>
-                    </div>
-
-                    <div class="c-profusao">
-                        <p> c) Profusão</p>
-                        <div class="label-pequenas-opacidades-c-profusao">
-                            <label><input type="radio" name="profusao" value="1">0/- </label>
-                            <label><input type="radio" name="profusao" value="2">1/0 </label>
-                            <label><input type="radio" name="profusao" value="3">2/1 </label>
-                            <label><input type="radio" name="profusao" value="4">3/2 </label>
-
-                        </div>
-                        <div class="label-pequenas-opacidades-c-profusao-01">
-                            <label><input type="radio" name="profusao" value="5">0/0 </label>
-                            <label><input type="radio" name="profusao" value="6">1/1 </label>
-                            <label><input type="radio" name="profusao" value="7">2/2 </label>
-                            <label><input type="radio" name="profusao" value="8">3/3 </label>
-                        </div>
-                        <div class="label-pequenas-opacidades-c-profusao-02">
-                            <label><input type="radio" name="profusao" value="5">0/1 </label>
-                            <label><input type="radio" name="profusao" value="6">1/2 </label>
-                            <label><input type="radio" name="profusao" value="7">2/3 </label>
-                            <label><input type="radio" name="profusao" value="8">3/+ </label>
-                        </div>
-                    </div>
-
-
-                    <div class="form-group-2c">
-                        <div class="c2">2C</div>
-                        <label class="label-name-grandes-opacidades-c2">GRANDES OPACIDADES:</label>
-                        <div class="label-grandes-opacidades-c2">
-                            <label><input type="radio" name="grandes-opacidades" value="sim" required>0</label>
-                            <label><input type="radio" name="grandes-opacidades" value="nao">A</label>
-                            <label><input type="radio" name="grandes-opacidades" value="nao">B</label>
-                            <label><input type="radio" name="grandes-opacidades" value="nao">C</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group-3a">
-                        <div class="a3">3A</div>
-                        <p class="label-name-anormalidade-a3">ALGUMA ANORMALIDADE PLEURAL CONSISTENTE COM PNEUMOCONIOSE:
-                        </p>
-                        <div class="label-anormalidade-a3">
-                            <label><input type="radio" name="pleural-3a" value="sim" required>SIM (complete
-                                3B, 3C e 3D)</label>
-                            <label><input type="radio" name="pleural-3a" value="nao"> NÃO (passe para a
-                                seção 4)</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group-3b">
-                        <div class="b3">3B</div>
-                        <p class="label-name-anormalidade-b3">PLACAS PLEURAIS:</p>
-                        <div class="label-anormalidade-b3">
-                            <label><input type="radio" name="plascas-pleurais-3b" value="sim" required>SIM</label>
-                            <label><input type="radio" name="plascas-pleurais-3b" value="nao"> NÃO</label>
-                        </div>
-                        <div class="div-local">
-                            <p class="text-local">LOCAL</p>
-                            <div class="label-anormalidade-b3-Parede-perfil">
-                                <p>Parede em perfil</p>
-                                <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
-                                <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
-                                <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
-
-
+                        <div class="form-group-rxdigital">
+                            <label>RX Digital</label>
+                            <div class="label-rxgidital">
+                                <label><input type="radio" name="rx-digital" value="sim" required> Sim</label>
+                                <label><input type="radio" name="rx-digital" value="nao"> Não</label>
                             </div>
-                            <div class="label-anormalidade-b3-Frontal-01">
-                                <p>Frontal</p>
-                                <label><input type="checkbox" name="Frontal" value="5">0</label>
-                                <label><input type="checkbox" name="Frontal" value="6">D</label>
-                                <label><input type="checkbox" name="Frontal" value="7">E</label>
+                        </div>
+                        <div class="form-group-leitura-negatoscópio">
 
-                            </div>
-                            <div class="label-anormalidade-b3-Diafragma-02">
-                                <p>Diafragma</p>
-                                <label><input type="checkbox" name="Diafragma" value="5">0</label>
-                                <label><input type="checkbox" name="Diafragma" value="6">D </label>
-                                <label><input type="checkbox" name="Diafragma" value="7">E</label>
+                            <label class="leitura-negat">Leitura em Negatoscópio</label>
 
-                            </div>
-                            <div class="label-anormalidade-b3-Outros-locais-03">
-                                <p>Outros locais</p>
-                                <label><input type="checkbox" name="Outros-locais" value="5">0</label>
-                                <label><input type="checkbox" name="Outros-locais" value="6">D</label>
-                                <label><input type="checkbox" name="Outros-locais" value="7">E</label>
-
-                                <div class="div-calcificacao">
-                                    <p class="text-calcificacao">CALCIFICAÇÃO</p>
-                                    <div class="label-calcificacao-b3-01">
-                                        <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
-                                        <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
-                                        <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
-
-
-                                    </div>
-                                    <div class="label-calcificacao-b3-02">
-                                        <label><input type="checkbox" name="Frontal" value="5">0</label>
-                                        <label><input type="checkbox" name="Frontal" value="6">D</label>
-                                        <label><input type="checkbox" name="Frontal" value="7">E</label>
-
-                                    </div>
-                                    <div class="label-calcificacao-b3-03">
-                                        <label><input type="checkbox" name="Diafragma" value="5">0</label>
-                                        <label><input type="checkbox" name="Diafragma" value="6">D </label>
-                                        <label><input type="checkbox" name="Diafragma" value="7">E</label>
-
-                                    </div>
-                                    <div class="label-calcificacao-b3-04">
-                                        <label><input type="checkbox" name="Outros-locais" value="5">0</label>
-                                        <label><input type="checkbox" name="Outros-locais" value="6">D</label>
-                                        <label><input type="checkbox" name="Outros-locais" value="7">E</label>
-
-
-                                    </div>
-                                </div>
+                            <div class="label-negatoscopio">
+                                <label><input type="radio" name="negatoscopio" value="sim" required> Sim</label>
+                                <label><input type="radio" name="negatoscopio" value="nao"> Não</label>
                             </div>
                         </div>
 
-                        <div class="div-extensao-parede">
-                            <p class="text-extensao">EXTENSÃO: PAREDE
-                                (Combinado em perfil e frontal)</p>
-                            <div class="label-extensao-parede-b3-01">
-                                <label><input type="checkbox" name="extensao" value="1">0</label>
-                                <label><input type="checkbox" name="extensao" value="2">D </label>
-                                <br>
-                                <label class="label-e-b3"><input type="checkbox" name="extensao" value="1">E</label>
-                                <label class="label-e-b3"><input type="checkbox" name="extensao" value="2">E</label>
+                    </div>
 
-                                <label class="label-e1-b3"><input type="checkbox" name="extensao" value="1">1</label>
-                                <label class="label-e1-b3"><input type="checkbox" name="extensao" value="2">2</label>
-                                <label class="label-e1-b3"><input type="checkbox" name="extensao" value="3">3</label>
 
-                                <label class="label-e2-b3"><input type="checkbox" name="extensao" value="4">1</label>
-                                <label class="label-e2-b3"><input type="checkbox" name="extensao" value="5">2</label>
-                                <label class="label-e2-b3"><input type="checkbox" name="extensao" value="6">3</label>
-                                <p>Até 1/4 da parede lateral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1
-                                    1/4 a 1/2 da parede lateral&nbsp;&nbsp;&nbsp;= 2
-                                    > 1/2 da parede lateral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 3
-                                </p>
+                    <div class="form-group-qualidade-tecnica">
+                        <div class="a1">1A</div>
+                        <label class="name-label-qualidade">QUALIDADE TÉCNICA:</label>
+                        <div class="label-qualidade-tecnica">
+                            <label><input type="radio" name="qualidade" value="1" required> 1</label>
+                            <label><input type="radio" name="qualidade" value="2"> 2</label>
+                            <label><input type="radio" name="qualidade" value="3"> 3</label>
+                            <label><input type="radio" name="qualidade" value="4"> 4</label>
+                        </div>
+                        <label class="name-label-comentario">Comentário:</label>
+                        <input class="input-comentario" type="text" id="comentario" name="Comentário" required>
+                    </div>
+
+                    <div class="form-group-radiografia-normal">
+                        <div class="b1">1B</div>
+                        <label class="name-label-radiografia-normal">RADIOGRAFIA NORMAL:</label>
+                        <div class="labe-radiografia-normal">
+                            <label><input type="radio" name="radiografia-normal" value="1" required> SIM (finalizar a
+                                leitura)</label>
+                            <label><input type="radio" name="radiografia-normal" value="2"> NÃO (passe p/ a seção
+                                2)</label>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group-2a">
+                        <div class="a2">2A</div>
+                        <label class="label-name-anormalidade-a2">ALGUMA ANORMALIDADE DE PARÊNQUIMA <br>
+                            CONSISTENTE COM PNEUMOCONIOSE:</label>
+                        <div class="label-anormalidade-a2">
+                            <label><input type="radio" name="anormalidade-parenquima" value="sim" required> SIM
+                                (complete 2B
+                                e 2C)</label>
+                            <label><input type="radio" name="anormalidade-parenquima" value="nao"> NÃO (passe para a
+                                seção
+                                3)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group-2b">
+                        <div class="b2">2B</div>
+                        <label class="label-name-pequenas-opacidades-b2">PEQUENAS OPACIDADES:</label>
+                        <p class="name-forma-tamanho"> a) Forma / tamanho</p>
+                        <div class="Primaria">
+                            <p>Primária</p>
+                            <div class="label-pequenas-opacidades-b2">
+                                <label><input type="radio" name="Primaria" value="1" required> p</label>
+                                <label><input type="radio" name="Primaria" value="2"> q</label>
+                                <label><input type="radio" name="Primaria" value="3"> r</label>
 
                             </div>
+                            <div class="label-pequenas-opacidades-b2-01">
+                                <label><input type="radio" name="Primaria" value="4"> s</label>
+                                <label><input type="radio" name="Primaria" value="5"> t</label>
+                                <label><input type="radio" name="Primaria" value="6"> u</label>
+                            </div>
                         </div>
-                        <div class="div-largura-opcional">
-                            <p class="text-largura-opcional">LARGURA (OPCIONAL) <br>
-                                (Mínimo de 3 mm para marcação)</p>
-                            <div class="label-largura-opcional-b3-01">
-                                <label><input type="checkbox" name="extensao" value="2">D </label>
-                                <br>
-                                <label class="label-largura-b3"><input type="checkbox" name="extensao"
-                                        value="1">E</label>
 
-                                <label class="label-largura1-b3"><input type="checkbox" name="extensao"
-                                        value="1">a</label>
-                                <label class="label-largura1-b3"><input type="checkbox" name="extensao"
-                                        value="2">b</label>
-                                <label class="label-largura1-b3"><input type="checkbox" name="extensao"
-                                        value="3">c</label>
+                        <div class="secundaria">
+                            <p>Secundária</p>
+                            <div class="label-pequenas-opacidades-b2-secundaria">
+                                <label><input type="radio" name="secundaria" value="1" required> p</label>
+                                <label><input type="radio" name="secundaria" value="2"> q</label>
+                                <label><input type="radio" name="secundaria" value="3"> r</label>
 
-                                <label class="label-largura2-b3"><input type="checkbox" name="extensao"
-                                        value="4">a</label>
-                                <label class="label-largura2-b3"><input type="checkbox" name="extensao"
-                                        value="5">b</label>
-                                <label class="label-largura2-b3"><input type="checkbox" name="extensao"
-                                        value="6">c</label>
-                                <p>3 a 5 mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= a
-                                    5 a 10 mm&nbsp;&nbsp;&nbsp;= b
-                                    > 10 mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= c
-                                </p>
-
+                            </div>
+                            <div class="label-pequenas-opacidades-b2-secundaria-01">
+                                <label><input type="radio" name="secundaria" value="4"> s</label>
+                                <label><input type="radio" name="secundaria" value="5"> t</label>
+                                <label><input type="radio" name="secundaria" value="6"> u</label>
                             </div>
                         </div>
 
 
-                        <div class="form-group-3c">
-                            <div class="c3">3C</div>
-                            <p class="label-name-costofrenico-c3">OBLITERAÇÃO DO SEIO COSTOFRÊNICO:
+                        <div class="b-zonas">
+                            <p> b) Zonas</p>
+                            <div class="label-pequenas-opacidades-b-Zonas">
+                                <label>
+                                    <p class="name-D">D</p>
+                                </label>
+                                <label><input type="checkbox" name="Zonas" value="1"> </label>
+                                <label><input type="checkbox" name="Zonas" value="2"> </label>
+                                <label><input type="checkbox" name="Zonas" value="3"> </label>
+
+                            </div>
+                            <div class="label-pequenas-opacidades-b-Zonas-01">
+                                <label>
+                                    <p class="name-E">E</p>
+                                </label>
+                                <label><input type="checkbox" name="Zonas" value="4"> </label>
+                                <label><input type="checkbox" name="Zonas" value="5"> </label>
+                                <label><input type="checkbox" name="Zonas" value="6"> </label>
+                            </div>
+                        </div>
+
+                        <div class="c-profusao">
+                            <p> c) Profusão</p>
+                            <div class="label-pequenas-opacidades-c-profusao">
+                                <label><input type="radio" name="profusao" value="1">0/- </label>
+                                <label><input type="radio" name="profusao" value="2">1/0 </label>
+                                <label><input type="radio" name="profusao" value="3">2/1 </label>
+                                <label><input type="radio" name="profusao" value="4">3/2 </label>
+
+                            </div>
+                            <div class="label-pequenas-opacidades-c-profusao-01">
+                                <label><input type="radio" name="profusao" value="5">0/0 </label>
+                                <label><input type="radio" name="profusao" value="6">1/1 </label>
+                                <label><input type="radio" name="profusao" value="7">2/2 </label>
+                                <label><input type="radio" name="profusao" value="8">3/3 </label>
+                            </div>
+                            <div class="label-pequenas-opacidades-c-profusao-02">
+                                <label><input type="radio" name="profusao" value="5">0/1 </label>
+                                <label><input type="radio" name="profusao" value="6">1/2 </label>
+                                <label><input type="radio" name="profusao" value="7">2/3 </label>
+                                <label><input type="radio" name="profusao" value="8">3/+ </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group-2c">
+                            <div class="c2">2C</div>
+                            <label class="label-name-grandes-opacidades-c2">GRANDES OPACIDADES:</label>
+                            <div class="label-grandes-opacidades-c2">
+                                <label><input type="radio" name="grandes-opacidades" value="sim" required>0</label>
+                                <label><input type="radio" name="grandes-opacidades" value="nao">A</label>
+                                <label><input type="radio" name="grandes-opacidades" value="nao">B</label>
+                                <label><input type="radio" name="grandes-opacidades" value="nao">C</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group-3a">
+                            <div class="a3">3A</div>
+                            <p class="label-name-anormalidade-a3">ALGUMA ANORMALIDADE PLEURAL CONSISTENTE COM
+                                PNEUMOCONIOSE:
                             </p>
-                            <div class="label-costofrenico-c3">
-                                <label><input type="checkbox" name="anormalidade-parenquima" value="1"
-                                        required>0</label>
-                                <label><input type="checkbox" name="anormalidade-parenquima" value="2">D</label>
-                                <label><input type="checkbox" name="anormalidade-parenquima" value="2">E</label>
-
+                            <div class="label-anormalidade-a3">
+                                <label><input type="radio" name="pleural-3a" value="sim" required>SIM (complete
+                                    3B, 3C e 3D)</label>
+                                <label><input type="radio" name="pleural-3a" value="nao"> NÃO (passe para a
+                                    seção 4)</label>
                             </div>
                         </div>
 
-
-                        <div class="form-group-3d">
-                            <div class="d3">3D</div>
-                            <p class="label-name-pleural-difuso-d3">ESPESSAMENTO PLEURAL DIFUSO:</p>
-                            <div class="label-pleural-difuso-d3">
-                                <label><input type="radio" name="pleural-difuso" value="sim" required>SIM</label>
-                                <label><input type="radio" name="pleural-difuso" value="nao"> NÃO</label>
+                        <div class="form-group-3b">
+                            <div class="b3">3B</div>
+                            <p class="label-name-anormalidade-b3">PLACAS PLEURAIS:</p>
+                            <div class="label-anormalidade-b3">
+                                <label><input type="radio" name="plascas-pleurais-3b" value="sim" required>SIM</label>
+                                <label><input type="radio" name="plascas-pleurais-3b" value="nao"> NÃO</label>
                             </div>
-                            <div class="div-local-d3">
-                                <p class="text-local-d3">LOCAL</p>
-                                <div class="label-pleural-difuso-d3-Parede-perfi">
+                            <div class="div-local">
+                                <p class="text-local">LOCAL</p>
+                                <div class="label-anormalidade-b3-Parede-perfil">
                                     <p>Parede em perfil</p>
                                     <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
                                     <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
@@ -356,35 +225,58 @@
 
 
                                 </div>
-                                <div class="label-pleural-difuso-d3-Frontal-01">
+                                <div class="label-anormalidade-b3-Frontal-01">
                                     <p>Frontal</p>
-                                    <label><input type="checkbox" name="difuso" value="5">0</label>
-                                    <label><input type="checkbox" name="difuso" value="6">D</label>
-                                    <label><input type="checkbox" name="difuso" value="7">E</label>
+                                    <label><input type="checkbox" name="Frontal" value="5">0</label>
+                                    <label><input type="checkbox" name="Frontal" value="6">D</label>
+                                    <label><input type="checkbox" name="Frontal" value="7">E</label>
 
                                 </div>
+                                <div class="label-anormalidade-b3-Diafragma-02">
+                                    <p>Diafragma</p>
+                                    <label><input type="checkbox" name="Diafragma" value="5">0</label>
+                                    <label><input type="checkbox" name="Diafragma" value="6">D </label>
+                                    <label><input type="checkbox" name="Diafragma" value="7">E</label>
+
+                                </div>
+                                <div class="label-anormalidade-b3-Outros-locais-03">
+                                    <p>Outros locais</p>
+                                    <label><input type="checkbox" name="Outros-locais" value="5">0</label>
+                                    <label><input type="checkbox" name="Outros-locais" value="6">D</label>
+                                    <label><input type="checkbox" name="Outros-locais" value="7">E</label>
+
+                                    <div class="div-calcificacao">
+                                        <p class="text-calcificacao">CALCIFICAÇÃO</p>
+                                        <div class="label-calcificacao-b3-01">
+                                            <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
+                                            <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
+                                            <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
 
 
-                                <div class="div-calcificacao-d3">
-                                    <p class="text-calcificacao-03">CALCIFICAÇÃO</p>
-                                    <div class="label-calcificacao-d3-01">
-                                        <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
-                                        <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
-                                        <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
+                                        </div>
+                                        <div class="label-calcificacao-b3-02">
+                                            <label><input type="checkbox" name="Frontal" value="5">0</label>
+                                            <label><input type="checkbox" name="Frontal" value="6">D</label>
+                                            <label><input type="checkbox" name="Frontal" value="7">E</label>
+
+                                        </div>
+                                        <div class="label-calcificacao-b3-03">
+                                            <label><input type="checkbox" name="Diafragma" value="5">0</label>
+                                            <label><input type="checkbox" name="Diafragma" value="6">D </label>
+                                            <label><input type="checkbox" name="Diafragma" value="7">E</label>
+
+                                        </div>
+                                        <div class="label-calcificacao-b3-04">
+                                            <label><input type="checkbox" name="Outros-locais" value="5">0</label>
+                                            <label><input type="checkbox" name="Outros-locais" value="6">D</label>
+                                            <label><input type="checkbox" name="Outros-locais" value="7">E</label>
 
 
+                                        </div>
                                     </div>
-                                    <div class="label-calcificacao-d3-02">
-                                        <label><input type="checkbox" name="Frontal" value="5">0</label>
-                                        <label><input type="checkbox" name="Frontal" value="6">D</label>
-                                        <label><input type="checkbox" name="Frontal" value="7">E</label>
-
-                                    </div>
-
                                 </div>
                             </div>
-                        </div>
-                        <div class="content-extensaao-parede">
+
                             <div class="div-extensao-parede">
                                 <p class="text-extensao">EXTENSÃO: PAREDE
                                     (Combinado em perfil e frontal)</p>
@@ -415,8 +307,6 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="content-largura-opcional">
                             <div class="div-largura-opcional">
                                 <p class="text-largura-opcional">LARGURA (OPCIONAL) <br>
                                     (Mínimo de 3 mm para marcação)</p>
@@ -445,172 +335,302 @@
                                     </p>
 
                                 </div>
-
                             </div>
-                        </div>
-                        <div class="oustras-anormalidades">
-                            <div class="form-group-3a">
-                                <div class="a3">4A</div>
-                                <p class="label-name-anormalidade-a3">OUTRAS ANORMALIDADES:
+
+
+                            <div class="form-group-3c">
+                                <div class="c3">3C</div>
+                                <p class="label-name-costofrenico-c3">OBLITERAÇÃO DO SEIO COSTOFRÊNICO:
                                 </p>
-                                <div class="label-anormalidade-a3">
-                                    <label><input type="radio" name="oustras-anormalidades" value="sim" required>SIM
-                                        (complete 4B)</label>
-                                    <label><input type="radio" name="oustras-anormalidades" value="nao">NÃO (finalizar a
-                                        leitura)</label>
+                                <div class="label-costofrenico-c3">
+                                    <label><input type="checkbox" name="anormalidade-parenquima" value="1"
+                                            required>0</label>
+                                    <label><input type="checkbox" name="anormalidade-parenquima" value="2">D</label>
+                                    <label><input type="checkbox" name="anormalidade-parenquima" value="2">E</label>
+
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="content-simbolos">
-                            <div class="form-group-3a">
-                                <div class="a3">4B</div>
-                                <p class="label-name-anormalidade-a3">SÍMBOLOS (vide legenda no verso):
-                                </p>
-                                <div class="container-4a">
-                                    <!-- Cada par de símbolo e checkbox -->
-                                    <div class="item">
-                                        <div class="simbolo">aa</div>
-                                        <div class=""><input type="checkbox" id="aa" name="simbolo" value="aa"></div>
+
+                            <div class="form-group-3d">
+                                <div class="d3">3D</div>
+                                <p class="label-name-pleural-difuso-d3">ESPESSAMENTO PLEURAL DIFUSO:</p>
+                                <div class="label-pleural-difuso-d3">
+                                    <label><input type="radio" name="pleural-difuso" value="sim" required>SIM</label>
+                                    <label><input type="radio" name="pleural-difuso" value="nao"> NÃO</label>
+                                </div>
+                                <div class="div-local-d3">
+                                    <p class="text-local-d3">LOCAL</p>
+                                    <div class="label-pleural-difuso-d3-Parede-perfi">
+                                        <p>Parede em perfil</p>
+                                        <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
+                                        <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
+                                        <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
+
+
                                     </div>
-                                    <div class="item">
-                                        <div class="simbolo">at</div>
-                                        <input type="checkbox" id="at" name="simbolo" value="at">
+                                    <div class="label-pleural-difuso-d3-Frontal-01">
+                                        <p>Frontal</p>
+                                        <label><input type="checkbox" name="difuso" value="5">0</label>
+                                        <label><input type="checkbox" name="difuso" value="6">D</label>
+                                        <label><input type="checkbox" name="difuso" value="7">E</label>
+
                                     </div>
-                                    <div class="item">
-                                        <div class="simbolo">ax</div>
-                                        <input type="checkbox" id="ax" name="simbolo" value="ax">
+
+
+                                    <div class="div-calcificacao-d3">
+                                        <p class="text-calcificacao-03">CALCIFICAÇÃO</p>
+                                        <div class="label-calcificacao-d3-01">
+                                            <label><input type="checkbox" name="Parede-perfil" value="1">0</label>
+                                            <label><input type="checkbox" name="Parede-perfil" value="2">D </label>
+                                            <label><input type="checkbox" name="Parede-perfil" value="3">E</label>
+
+
+                                        </div>
+                                        <div class="label-calcificacao-d3-02">
+                                            <label><input type="checkbox" name="Frontal" value="5">0</label>
+                                            <label><input type="checkbox" name="Frontal" value="6">D</label>
+                                            <label><input type="checkbox" name="Frontal" value="7">E</label>
+
+                                        </div>
+
                                     </div>
-                                    <div class="item">
-                                        <div class="simbolo">bu</div>
-                                        <input type="checkbox" id="bu" name="simbolo" value="bu">
+                                </div>
+                            </div>
+                            <div class="content-extensaao-parede">
+                                <div class="div-extensao-parede">
+                                    <p class="text-extensao">EXTENSÃO: PAREDE
+                                        (Combinado em perfil e frontal)</p>
+                                    <div class="label-extensao-parede-b3-01">
+                                        <label><input type="checkbox" name="extensao" value="1">0</label>
+                                        <label><input type="checkbox" name="extensao" value="2">D </label>
+                                        <br>
+                                        <label class="label-e-b3"><input type="checkbox" name="extensao"
+                                                value="1">E</label>
+                                        <label class="label-e-b3"><input type="checkbox" name="extensao"
+                                                value="2">E</label>
+
+                                        <label class="label-e1-b3"><input type="checkbox" name="extensao"
+                                                value="1">1</label>
+                                        <label class="label-e1-b3"><input type="checkbox" name="extensao"
+                                                value="2">2</label>
+                                        <label class="label-e1-b3"><input type="checkbox" name="extensao"
+                                                value="3">3</label>
+
+                                        <label class="label-e2-b3"><input type="checkbox" name="extensao"
+                                                value="4">1</label>
+                                        <label class="label-e2-b3"><input type="checkbox" name="extensao"
+                                                value="5">2</label>
+                                        <label class="label-e2-b3"><input type="checkbox" name="extensao"
+                                                value="6">3</label>
+                                        <p>Até 1/4 da parede lateral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 1
+                                            1/4 a 1/2 da parede lateral&nbsp;&nbsp;&nbsp;= 2
+                                            > 1/2 da parede lateral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 3
+                                        </p>
+
                                     </div>
-                                    <div class="item">
-                                        <div class="simbolo">ca</div>
-                                        <input type="checkbox" id="ca" name="simbolo" value="ca">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">cn</div>
-                                        <input type="checkbox" id="cn" name="simbolo" value="cn">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">co</div>
-                                        <input type="checkbox" id="co" name="simbolo" value="co">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">cp</div>
-                                        <input type="checkbox" id="cp" name="simbolo" value="cp">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">cv</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">di</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">ef</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">em</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">es</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">fr</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">hi</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">ho</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">id</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">ih</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">kl</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">me</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">pa</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">pb</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">pi</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">px</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">ra</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">rp</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">tb</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
-                                    </div>
-                                    <div class="item">
-                                        <div class="simbolo">od</div>
-                                        <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                </div>
+                            </div>
+                            <div class="content-largura-opcional">
+                                <div class="div-largura-opcional">
+                                    <p class="text-largura-opcional">LARGURA (OPCIONAL) <br>
+                                        (Mínimo de 3 mm para marcação)</p>
+                                    <div class="label-largura-opcional-b3-01">
+                                        <label><input type="checkbox" name="extensao" value="2">D </label>
+                                        <br>
+                                        <label class="label-largura-b3"><input type="checkbox" name="extensao"
+                                                value="1">E</label>
+
+                                        <label class="label-largura1-b3"><input type="checkbox" name="extensao"
+                                                value="1">a</label>
+                                        <label class="label-largura1-b3"><input type="checkbox" name="extensao"
+                                                value="2">b</label>
+                                        <label class="label-largura1-b3"><input type="checkbox" name="extensao"
+                                                value="3">c</label>
+
+                                        <label class="label-largura2-b3"><input type="checkbox" name="extensao"
+                                                value="4">a</label>
+                                        <label class="label-largura2-b3"><input type="checkbox" name="extensao"
+                                                value="5">b</label>
+                                        <label class="label-largura2-b3"><input type="checkbox" name="extensao"
+                                                value="6">c</label>
+                                        <p>3 a 5 mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= a
+                                            5 a 10 mm&nbsp;&nbsp;&nbsp;= b
+                                            > 10 mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= c
+                                        </p>
+
                                     </div>
 
                                 </div>
-                                <p class="od-comentario">(*) od: Necessário um comentário.</p>
                             </div>
-                        </div>
-
-                        <div class="content-comentario">
-                            <div class="form-group-3a">
-                                <div class="a3">4C</div>
-                                <p class="label-name-anormalidade-a3">COMENTÁRIOS:
-                                </p>
-                                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-
+                            <div class="oustras-anormalidades">
+                                <div class="form-group-3a">
+                                    <div class="a3">4A</div>
+                                    <p class="label-name-anormalidade-a3">OUTRAS ANORMALIDADES:
+                                    </p>
+                                    <div class="label-anormalidade-a3">
+                                        <label><input type="radio" name="oustras-anormalidades" value="sim" required>SIM
+                                            (complete 4B)</label>
+                                        <label><input type="radio" name="oustras-anormalidades" value="nao">NÃO
+                                            (finalizar a
+                                            leitura)</label>
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="content-simbolos">
+                                <div class="form-group-3a">
+                                    <div class="a3">4B</div>
+                                    <p class="label-name-anormalidade-a3">SÍMBOLOS (vide legenda no verso):
+                                    </p>
+                                    <div class="container-4a">
+                                        <!-- Cada par de símbolo e checkbox -->
+                                        <div class="item">
+                                            <div class="simbolo">aa</div>
+                                            <div class=""><input type="checkbox" id="aa" name="simbolo" value="aa">
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">at</div>
+                                            <input type="checkbox" id="at" name="simbolo" value="at">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ax</div>
+                                            <input type="checkbox" id="ax" name="simbolo" value="ax">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">bu</div>
+                                            <input type="checkbox" id="bu" name="simbolo" value="bu">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ca</div>
+                                            <input type="checkbox" id="ca" name="simbolo" value="ca">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">cn</div>
+                                            <input type="checkbox" id="cn" name="simbolo" value="cn">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">co</div>
+                                            <input type="checkbox" id="co" name="simbolo" value="co">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">cp</div>
+                                            <input type="checkbox" id="cp" name="simbolo" value="cp">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">cv</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">di</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ef</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">em</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">es</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">fr</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">hi</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ho</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">id</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ih</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">kl</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">me</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">pa</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">pb</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">pi</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">px</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">ra</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">rp</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">tb</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
+                                        <div class="item">
+                                            <div class="simbolo">od</div>
+                                            <input type="checkbox" id="cv" name="simbolo" value="cv">
+                                        </div>
 
-                        </div>
-                        <div class="form-group-data-leitura">
-                            <p>DATA DA LEITURA</p>
-                            <label for="date"></label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
+                                    </div>
+                                    <p class="od-comentario">(*) od: Necessário um comentário.</p>
+                                </div>
+                            </div>
 
-                        <div class="form-group-assinatura" id="signature-pad">
-                            <label>ASSINATURA</label>
-                        </div>
-                        <p class="fjdf-cod">FJDF/CÓD. 300179.9 - A4 - 1x1 - Versão 2.1 (06/2012 - SMA-Lígia)</p>
+                            <div class="content-comentario">
+                                <div class="form-group-3a">
+                                    <div class="a3">4C</div>
+                                    <p class="label-name-anormalidade-a3">COMENTÁRIOS:
+                                    </p>
+                                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>
 
-            </form>
+                                </div>
+
+
+                            </div>
+                            <div class="form-group-data-leitura">
+                                <p>DATA DA LEITURA</p>
+                                <label for="date"></label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group-assinatura" id="signature-pad">
+                                <label>ASSINATURA</label>
+                            </div>
+                            <p class="fjdf-cod">FJDF/CÓD. 300179.9 - A4 - 1x1 - Versão 2.1 (06/2012 - SMA-Lígia)</p>
+                        </div>
+                    </div>
+            </div>
         </div>
+        </form>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
