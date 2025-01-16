@@ -1,0 +1,32 @@
+@media print {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .zoom-wrapper {
+        transform: scale(0.65);
+        transform-origin: top left;
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        page-break-inside: avoid;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        page-break-inside: avoid;
+        background-color: white;
+    }
+
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+} 
