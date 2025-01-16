@@ -1792,10 +1792,10 @@ textarea {
         
         width: 250mm;
         height: 297mm;
-        zoom: 0.65;
+        zoom: 0.78;
        
-        top: 5%;
-        left: 10%;
+        top: 1%;
+        
         padding: 0;
         page-break-inside: avoid;
     }
@@ -1804,7 +1804,7 @@ textarea {
        
         width: 220mm;
         height: 297mm;
-        margin: 10mm 10mm 10mm 10mm;
+        margin: 0mm 0mm 0mm 0mm;
         padding: 0;
         page-break-inside: avoid;
     }
@@ -1826,6 +1826,19 @@ textarea {
     }
     .item {
         width: 34px;
+    }
+    .content-comentario .form-group-3a{
+        height: 142px;
+    }
+    
+    .form-group-assinatura{
+        top: -1795px;
+    }
+    .form-group-data-leitura{
+        top: -1684px;
+    }
+    .fjdf-cod{
+        top: -1810px;
     }
 
     @page {
