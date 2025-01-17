@@ -1844,4 +1844,18 @@ textarea {
         margin: 0;
     }
 }
+@media screen and (max-width: 1280px){
+    .zoom-wrapper {   
+            top: 55%;
+    }
+}
+@media screen and (max-width: 900px){
+    .zoom-wrapper {   
+            top: 55%;
+            width: 100%;
+            height: 100%;
+    }
+}
+
+
 
