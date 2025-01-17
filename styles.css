@@ -1783,25 +1783,20 @@ textarea {
         margin: 0;
         padding: 0;
         width: 250mm;
-        height: 297mm;
-        
+        height: 297mm;        
         
     }
 
-    .zoom-wrapper {       
-        
+    .zoom-wrapper {     
         width: 250mm;
         height: 297mm;
-        zoom: 0.78;
-       
-        top: 1%;
-        
+        zoom: 0.78;       
+        top: 1%;        
         padding: 0;
         page-break-inside: avoid;
     }
 
-    .form-container {
-       
+    .form-container {       
         width: 220mm;
         height: 297mm;
         margin: 0mm 0mm 0mm 0mm;

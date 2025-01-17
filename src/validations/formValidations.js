@@ -6,15 +6,8 @@ export const formValidationSchema = yup.object().shape({
         dataRx: yup.date().required('Data do RX é obrigatória'),
         numeroRx: yup.string().required('Número do RX é obrigatório'),
         leitor: yup.string().required('Leitor é obrigatório'),
-        rxDigital: yup.boolean().required('Selecione uma opção'),
-        leituraNegastoscopio: yup.boolean().required('Selecione uma opção')
+        rxDigital: yup.string().required('RX Digital é obrigatório'),
+        leituraNegastoscopio: yup.string().required('Leitura em Negastoscópio é obrigatória')
     }),
-    qualidadeTecnica: yup.object().shape({
-        nivel: yup.string().required('Selecione o nível'),
-        comentario: yup.string().when('nivel', {
-            is: (nivel) => nivel === '4',
-            then: yup.string().required('Comentário obrigatório para nível 4')
-        })
-    }),
-    // ... outras validações
+    // Adicionar outras validações conforme necessário
 }); 

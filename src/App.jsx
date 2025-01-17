@@ -1,37 +1,42 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { RadiologicalFormModel } from './models/FormModel';
-import { formValidationSchema } from './validations/formValidations';
-import { generatePDF } from './utils/pdfGenerator';
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import { useFormManager } from './hooks/useForm';
 import { PersonalInfo, QualidadeTecnica, RadiografiaNormal, Anormalidades, Assinatura } from './components/Form';
+import 'react-toastify/dist/ReactToastify.css';
 
-const App = () => {
-    const [formData, setFormData] = useState(new RadiologicalFormModel());
-    const { register, handleSubmit, watch, formState: { errors } } = useForm({
-        resolver: yupResolver(formValidationSchema),
-        defaultValues: formData
-    });
+const App = ({ formId }) => {
+    const { loading, methods, saveForm } = useFormManager(formId);
 
     const onSubmit = async (data) => {
-        try {
-            await generatePDF(data);
-        } catch (error) {
-            console.error('Erro ao gerar PDF:', error);
+        const success = await saveForm(data);
+        if (success && !formId) {
+            methods.reset();
         }
     };
 
+    if (loading) return <div>Carregando...</div>;
+
     return (
-        <div className="zoom-wrapper">
-            <form onSubmit={handleSubmit(onSubmit)} className="form-container">
-                <PersonalInfo register={register} errors={errors} />
-                <QualidadeTecnica register={register} errors={errors} />
-                <RadiografiaNormal register={register} errors={errors} />
-                <Anormalidades register={register} errors={errors} watch={watch} />
-                <Assinatura register={register} errors={errors} />
-                <button type="submit">Gerar PDF</button>
-            </form>
-        </div>
+        <>
+            <div className="zoom-wrapper">
+                <form onSubmit={methods.handleSubmit(onSubmit)} className="form-container">
+                    <PersonalInfo register={methods.register} errors={methods.formState.errors} />
+                    <QualidadeTecnica register={methods.register} errors={methods.formState.errors} />
+                    <RadiografiaNormal register={methods.register} errors={methods.formState.errors} />
+                    <Anormalidades 
+                        register={methods.register} 
+                        errors={methods.formState.errors} 
+                        watch={methods.watch}
+                    />
+                    <Assinatura register={methods.register} errors={methods.formState.errors} />
+                    
+                    <button type="submit" disabled={loading}>
+                        {formId ? 'Atualizar' : 'Criar'} Formulário
+                    </button>
+                </form>
+            </div>
+            <ToastContainer />
+        </>
     );
 };
 

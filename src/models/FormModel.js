@@ -1,50 +1,66 @@
 export class RadiologicalFormModel {
-    constructor() {
-        return {
-            personalInfo: {
-                nome: '',
-                dataRx: '',
-                numeroRx: '',
-                leitor: '',
-                rxDigital: null,
-                leituraNegastoscopio: null
-            },
-            qualidadeTecnica: {
-                nivel: '',
-                comentario: ''
-            },
-            radiografiaNormal: null,
-            anormalidadeParenquima: {
-                status: null,
+    constructor(data = {}) {
+        this.id = data.id || null;
+        this.createdAt = data.createdAt || new Date();
+        this.updatedAt = data.updatedAt || new Date();
+        this.status = data.status || 'draft';
+
+        this.personalInfo = {
+            nome: data.personalInfo?.nome || '',
+            dataRx: data.personalInfo?.dataRx || '',
+            numeroRx: data.personalInfo?.numeroRx || '',
+            leitor: data.personalInfo?.leitor || '',
+            rxDigital: data.personalInfo?.rxDigital || '',
+            leituraNegastoscopio: data.personalInfo?.leituraNegastoscopio || ''
+        };
+
+        this.qualidadeTecnica = {
+            nivel: data.qualidadeTecnica?.nivel || '',
+            comentario: data.qualidadeTecnica?.comentario || ''
+        };
+
+        this.radiografiaNormal = data.radiografiaNormal || '';
+
+        this.anormalidades = {
+            parenquima: {
+                presente: data.anormalidades?.parenquima?.presente || false,
                 pequenasOpacidades: {
-                    formaTamanhoPrimaria: '',
-                    formaTamanhoSecundaria: '',
-                    zonas: [],
-                    profusao: ''
-                },
-                grandesOpacidades: ''
-            },
-            anormalidadePleural: {
-                status: null,
-                placasPleurais: {
-                    status: null,
-                    local: {
-                        paredeEmPerfil: [],
-                        frontal: [],
-                        diafragma: [],
-                        outrosLocais: []
+                    primaria: data.anormalidades?.parenquima?.pequenasOpacidades?.primaria || '',
+                    secundaria: data.anormalidades?.parenquima?.pequenasOpacidades?.secundaria || '',
+                    zonas: {
+                        direita: data.anormalidades?.parenquima?.pequenasOpacidades?.zonas?.direita || [],
+                        esquerda: data.anormalidades?.parenquima?.pequenasOpacidades?.zonas?.esquerda || []
                     },
-                    calcificacao: [],
-                    extensao: []
+                    profusao: data.anormalidades?.parenquima?.pequenasOpacidades?.profusao || ''
                 }
-            },
-            outrasAnormalidades: {
-                status: null,
-                simbolos: [],
-                comentarios: ''
-            },
-            dataLeitura: '',
-            assinatura: null
+            }
+        };
+
+        this.conclusao = {
+            dataLeitura: data.conclusao?.dataLeitura || '',
+            assinatura: data.conclusao?.assinatura || ''
+        };
+
+        this.metadata = {
+            version: '1.0',
+            lastModifiedBy: data.metadata?.lastModifiedBy || '',
+            hospital: data.metadata?.hospital || '',
+            department: data.metadata?.department || ''
+        };
+    }
+
+    toJSON() {
+        return {
+            id: this.id,
+            createdAt: this.createdAt,
+            updatedAt: this.updatedAt,
+            status: this.status,
+            personalInfo: this.personalInfo,
+            qualidadeTecnica: this.qualidadeTecnica,
+            radiografiaNormal: this.radiografiaNormal,
+            anormalidades: this.anormalidades,
+            conclusao: this.conclusao,
+            metadata: this.metadata
         };
     }
 } 
