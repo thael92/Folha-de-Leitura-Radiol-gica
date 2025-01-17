@@ -1824,6 +1824,9 @@ textarea {
     .label-pequenas-opacidades-c-profusao-02 label{
         top: -280px;
     }
+    .label-anormalidade-a3 label{
+        top: -178px;
+    }
     .item {
         width: 34px;
     }
@@ -1846,3 +1849,4 @@ textarea {
         margin: 0;
     }
 }
+
