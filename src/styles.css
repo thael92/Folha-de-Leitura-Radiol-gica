@@ -1,32 +1,72 @@
+
 @media print {
     html, body {
         margin: 0;
         padding: 0;
-        width: 210mm;
+        width: 250mm;
         height: 297mm;
+        
+        
     }
 
-    .zoom-wrapper {
-        transform: scale(0.65);
-        transform-origin: top left;
-        width: 210mm;
+    .zoom-wrapper {       
+        
+        width: 250mm;
         height: 297mm;
-        margin: 0;
+        zoom: 0.78;
+       
+        top: 1%;
+        
         padding: 0;
         page-break-inside: avoid;
     }
 
     .form-container {
-        width: 100%;
-        height: 100%;
-        margin: 0;
+       
+        width: 220mm;
+        height: 297mm;
+        margin: 0mm 0mm 0mm 0mm;
         padding: 0;
         page-break-inside: avoid;
-        background-color: white;
+    }
+    .label-pequenas-opacidades-b2-secundaria-01 label {      
+        top: -130px;   
+    }
+    .label-pequenas-opacidades-b-Zonas-01 label{
+        top: -152px;
+        height: 20px;
+    }
+    .label-pequenas-opacidades-b2-01 label {
+        top: -130px;
+    }
+    .label-pequenas-opacidades-c-profusao-01 label {
+        top: -152px;
+    }
+    .label-pequenas-opacidades-c-profusao-02 label{
+        top: -280px;
+    }
+    .label-anormalidade-a3 label{
+        top: -178px;
+    }
+    .item {
+        width: 34px;
+    }
+    .content-comentario .form-group-3a{
+        height: 142px;
+    }
+    
+    .form-group-assinatura{
+        top: -1795px;
+    }
+    .form-group-data-leitura{
+        top: -1684px;
+    }
+    .fjdf-cod{
+        top: -1810px;
     }
 
     @page {
         size: A4 portrait;
         margin: 0;
     }
-} 
+}
