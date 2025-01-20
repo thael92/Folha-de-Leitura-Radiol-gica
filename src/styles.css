@@ -1,11 +1,23 @@
 
+
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        padding: 10px;
+        zoom: 0.8;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
 @media print {
     html, body {
         margin: 0;
         padding: 0;
         width: 250mm;
-        height: 297mm;
-        
+        height: 297mm;       
         
     }
 
@@ -68,6 +80,11 @@
     .fjdf-cod{
         top: -1810px;
     }
+    /* Prevenir quebras indesejadas */
+    table, tr, td, th, img, h2, h3, h4 {
+        page-break-inside: avoid !important;
+    }
+    
 
     @page {
         size: A4 portrait;
