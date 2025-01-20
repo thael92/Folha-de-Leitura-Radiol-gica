@@ -60,7 +60,7 @@ function adjustZoom() {
         });
 
         window.addEventListener("afterprint", () => {
-            zoomWrapper.style.zoom = "1"; // Restaura o zoom após impressão
+            zoomWrapper.style.zoom = "0.78"; // Restaura o zoom após impressão
         });
     }
     else {
