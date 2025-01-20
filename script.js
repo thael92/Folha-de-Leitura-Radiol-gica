@@ -20,20 +20,50 @@ function adjustZoom() {
 
     if (isMobile) {
         if (isLandscape) {
-            // No modo paisagem, prioriza o preenchimento da altura para melhorar o uso
+            // No modo paisagem, prioriza o preenchimento da altura
             scale = windowHeight / formHeight;
         } else {
             // No modo retrato, prioriza o preenchimento da largura
             scale = windowWidth / formWidth;
         }
 
-        // Aplica o zoom com centralização
+        // Adiciona os estilos diretamente ao zoomWrapper e formContainer
+        zoomWrapper.style.width = "100%";
+        zoomWrapper.style.height = "auto";
+        zoomWrapper.style.zoom = "1";
+        zoomWrapper.style.transformOrigin = "left top";       
+        zoomWrapper.style.margin = "0";
+        zoomWrapper.style.padding = "0";
         formContainer.style.transform = `scale(${scale})`;
+        zoomWrapper.style.pageBreakInside = "avoid";
+        zoomWrapper.style.pageBreakBefore = "always";
         zoomWrapper.style.position = "absolute";
         zoomWrapper.style.top = "50%";
         zoomWrapper.style.left = "50%";
         zoomWrapper.style.transform = `translate(-50%, -50%)`;
-    } else {
+
+
+
+        // Adiciona eventos para ajustar a impressão no celular
+        window.addEventListener("beforeprint", () => {
+            zoomWrapper.style.zoom = "1"; // Remove zoom para impressão
+            zoomWrapper.style.margin = "0";
+            zoomWrapper.style.padding = "0";
+            zoomWrapper.style.transform = "none"; // Remove transform para evitar conflitos
+            zoomWrapper.style.position = "static"; // Define posição como estática para impressão
+            zoomWrapper.style.pageBreakInside = "avoid"; // Evita quebra de página dentro do wrapper
+            zoomWrapper.style.pageBreakBefore = "always"; // Garante que o wrapper comece em uma nova página
+
+            formContainer.style.transform = "none"; // Remove transform do container
+            formContainer.style.width = "100%"; // Preenche a largura total
+            formContainer.style.height = "auto"; // Ajusta a altura automaticamente
+        });
+
+        window.addEventListener("afterprint", () => {
+            zoomWrapper.style.zoom = "1"; // Restaura o zoom após impressão
+        });
+    }
+    else {
         // No computador, não aplica zoom e centraliza com flexbox
         formContainer.style.transform = `scale(1)`;
         formContainer.style.position = "relative";
@@ -60,15 +90,15 @@ const doc = new jsPDF({
 
 doc.html(document.querySelector('.form-container'), {
     callback: function (doc) {
-      doc.save('document.pdf');
+        doc.save('document.pdf');
     },
     x: 5,        // 5mm da margem esquerda
     y: 5,        // 5mm do topo
     width: 200,  // Largura do conteúdo em mm
     windowWidth: 1087, // Largura original do container
-    
+
     html2canvas: {
-        
+
         letterRendering: true,
         useCORS: true,
         logging: true,
@@ -78,20 +108,14 @@ doc.html(document.querySelector('.form-container'), {
     margin: [5, 5, 5, 5] // margens [superior, esquerda, inferior, direita]
 });
 
-window.addEventListener('beforeprint', function() {
+window.addEventListener('beforeprint', function () {
     document.querySelector('.zoom-wrapper').style.transform = 'zoom(1)'; // Ajuste a escala conforme necessário
     document.querySelector('.zoom-wrapper').style.transformOrigin = 'top left';
 });
 
-window.addEventListener('afterprint', function() {
+window.addEventListener('afterprint', function () {
     document.querySelector('.zoom-wrapper').style.transform = ''; // Remove a escala após a impressão
 });
-/**
- * Adjusts the zoom and centering of the form container based on the window size.
- * This function is called on page load, window resize, and orientation change events.
- * It scales the form container to fit the window while maintaining the aspect ratio,
- * and centers the scaled form container both vertically and horizontally.
- */
 
-  
+
 
