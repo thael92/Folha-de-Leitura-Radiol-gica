@@ -46,7 +46,7 @@ function adjustZoom() {
 
         // Adiciona eventos para ajustar a impressão no celular
         window.addEventListener("beforeprint", () => {
-            zoomWrapper.style.zoom = "1"; // Remove zoom para impressão
+            zoomWrapper.style.zoom = "0.78"; // Remove zoom para impressão
             zoomWrapper.style.margin = "0";
             zoomWrapper.style.padding = "0";
             zoomWrapper.style.transform = "none"; // Remove transform para evitar conflitos
