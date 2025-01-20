@@ -79,7 +79,7 @@ doc.html(document.querySelector('.form-container'), {
 });
 
 window.addEventListener('beforeprint', function() {
-    document.querySelector('.zoom-wrapper').style.transform = 'scale(0.8)'; // Ajuste a escala conforme necessário
+    document.querySelector('.zoom-wrapper').style.transform = 'zoom(1)'; // Ajuste a escala conforme necessário
     document.querySelector('.zoom-wrapper').style.transformOrigin = 'top left';
 });
 

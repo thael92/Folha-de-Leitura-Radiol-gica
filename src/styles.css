@@ -19,6 +19,8 @@
         
         padding: 0;
         page-break-inside: avoid;
+        page-break-before: always;
+    
     }
 
     .form-container {
@@ -28,6 +30,8 @@
         margin: 0mm 0mm 0mm 0mm;
         padding: 0;
         page-break-inside: avoid;
+        page-break-before: always;
+    
     }
     .label-pequenas-opacidades-b2-secundaria-01 label {      
         top: -130px;   

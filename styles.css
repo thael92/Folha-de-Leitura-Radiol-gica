@@ -1786,6 +1786,9 @@ textarea {
         height: 297mm;        
         
     }
+    header {
+        padding-top: 0px;
+      }
 
     .zoom-wrapper {     
         width: 250mm;
@@ -1794,6 +1797,7 @@ textarea {
         top: 1%;        
         padding: 0;
         page-break-inside: avoid;
+        page-break-before: always;
     }
 
     .form-container {       
@@ -1802,6 +1806,7 @@ textarea {
         margin: 0mm 0mm 0mm 0mm;
         padding: 0;
         page-break-inside: avoid;
+        page-break-before: always;
     }
     .label-pequenas-opacidades-b2-secundaria-01 label {      
         top: -130px;   
@@ -1842,6 +1847,8 @@ textarea {
     @page {
         size: A4 portrait;
         margin: 0;
+        orphans: 1; /* Mínimo de linhas em uma página */
+        widows: 1; /* Mínimo de linhas no topo da página */
     }
 }
 
