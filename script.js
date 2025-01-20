@@ -114,7 +114,7 @@ window.addEventListener('beforeprint', function () {
 });
 
 window.addEventListener('afterprint', function () {
-    document.querySelector('.zoom-wrapper').style.transform = ''; // Remove a escala após a impressão
+    document.querySelector('.zoom-wrapper').style.transform = 'zoom(1)'; // Remove a escala após a impressão
 });
 
 
